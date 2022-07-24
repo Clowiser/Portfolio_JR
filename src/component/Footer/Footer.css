@@ -1,0 +1,8 @@
+.infos_footer {
+    list-style-type: none;
+}
+
+.container_infos_footer {
+    display: flex;
+    justify-content: center;
+}
