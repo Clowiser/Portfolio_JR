@@ -1,0 +1,37 @@
+.conteneur_banniere {
+    max-width: 90%;
+    height: 530px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.c_b1 {
+    padding: 30%;
+    background-color: #EDEDED;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fondu 20s ease-in-out infinite both;
+}
+
+.c_b1:hover {
+    animation-play-state: paused;
+}
+
+@keyframes fondu {
+    0% {
+        background-image: url("../../style/assets/img/banner/famille_banner.png");
+    }
+    30% {
+        background-image: url("../../style/assets/img/banner/Jdr_banner.png");
+    }
+    60% {
+        background-image: url("../../style/assets/img/banner/OW_banner.png");
+    }
+    85% {
+        background-image: url("../../style/assets/img/banner/grotteDosDanse_banner.png")
+    }
+    100% {
+        background-image: url("../../style/assets/img/banner/famille_banner.png");
+    }
+}

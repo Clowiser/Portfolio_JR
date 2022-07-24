@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../style/assets/img/logo/JR_CA.png"
+import logo_JR from "../../style/assets/img/logo/JR_CA.png"
 import {Outlet} from "react-router-dom";
 import {SA, SImg, SNavContainer, SUl} from "./Header.styled";
 
@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <SNavContainer>
                 <SUl>
-                    <li><SImg src={logo} alt="Logo du site Jessica Rigaud Créations"/></li>
+                    <li><SImg src={logo_JR} alt="Logo du site Jessica Rigaud Créations"/></li>
                     <SA to="/">
                         <li>Accueil</li>
                     </SA>
