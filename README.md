@@ -1,16 +1,21 @@
-#Portfolio Jessica Rigaud
-Date : 11/05/2022
+# Portfolio Jessica Rigaud
 
-##Projet :
-Création de mon portfolio de mes créations (artisitiques, informatiques)
+Date : 24/07/2022
 
-##Technologies :
+## Projet :
+
+Création de mon portfolio de mes créations (artistiques, informatiques)
+
+## Technologies :
+
 - React TypeScript
 - NodeJS
-- PostgreSQL
+- MySQL
 
-##Pages :
+## Pages :
+
 3
+
 - Accueil
 - Portfolio
 - Qui-suis-je ?
