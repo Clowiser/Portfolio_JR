@@ -1,25 +1,11 @@
 import React from "react";
-import logo_JR from "../../style/assets/img/logo/JR_CA.png"
 import {Outlet} from "react-router-dom";
-import {SA, SImg, SNavContainer, SUl} from "./Header.styled";
+import Nav from "./Nav/Nav";
 
 const Header = () => {
     return (
         <>
-            <SNavContainer>
-                <SUl>
-                    <li><SImg src={logo_JR} alt="Logo du site Jessica Rigaud Créations"/></li>
-                    <SA to="/">
-                        <li>Accueil</li>
-                    </SA>
-                    <SA to="/portfolio">
-                        <li>Portfolio</li>
-                    </SA>
-                    <SA to="/biographie">
-                        <li>Qui suis-je ?</li>
-                    </SA>
-                </SUl>
-            </SNavContainer>
+            <Nav/>
             <Outlet/>
         </>
     );
