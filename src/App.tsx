@@ -10,24 +10,37 @@ import store from "./app/store";
 import {Provider} from "react-redux";
 import PortfolioContainer from "./component/PortfolioContainer/PortfolioContainer";
 
-const locale = navigator.language;
+// const locale = navigator.language;
+//
+// console.log(locale)
+//
+// let lang: any;
+// if (locale === 'en-US') {
+//     lang = English;
+// } else {
+//     if (locale === 'fr-FR') {
+//         lang = Francais;
+//     }
+// }
+
+const locale = IntlProvider.defaultProps.defaultLocale;
+
+console.log(locale)
 
 let lang: any;
 if (locale === 'en') {
     lang = English;
-} else {
-    if (locale === 'fr') {
-        lang = Francais;
-    }
 }
 
 const App: React.FC = () => {
-    const [messages, setMessages] = useState(lang);
+    // const [messages, setMessages] = useState(lang);
+
 
     return (
         <BrowserRouter>
             <Provider store={store}>
-                <IntlProvider locale={locale}>
+                {/*<IntlProvider locale={locale} defaultLocale={locale} messages={messages}>*/}
+                <IntlProvider messages={{}} locale="en" defaultLocale="en">
                     <PortfolioContainer/>
                 </IntlProvider>
             </Provider>
