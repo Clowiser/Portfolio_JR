@@ -5,13 +5,15 @@ import {useIntl} from "react-intl";
 
 const Home = () => {
     const intl = useIntl();
+
     return (
         <>
             <SHeaderContainer>
                 <BannerAnimation/>
             </SHeaderContainer>
             <div>
-                <h1>{intl.formatMessage({id: "home.welcome_message"})}</h1>
+                <h1>{intl.formatMessage({id: 'home_welcome_message'})}</h1>
+
                 <p>Exploratrice de l'imaginaire et artiste en herbe connectée, j'ai toujours été attirée par la création
                     et des possibilités incroyables qu'elle nous offre
                     - <span> l'art est partout et nous sommes l'art !</span>

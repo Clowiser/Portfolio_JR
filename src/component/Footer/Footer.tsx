@@ -1,6 +1,8 @@
 import React from "react";
+import {FormattedDate, useIntl} from "react-intl";
 
 const Footer = () => {
+    const intl = useIntl();
     return (
         <>
             <div className="container_infos_footer">
@@ -14,6 +16,8 @@ const Footer = () => {
                     <li>Linkedin</li>
                     <li>GitHub</li>
                 </ul>
+  
+                <p>{intl.formatDate(Date.now())}</p>
             </div>
         </>
     );

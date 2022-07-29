@@ -22,8 +22,12 @@ export const SA = styled(Link)`
     font-weight: bold;
   }`;
 
-export const SImg = styled.img`
-  width: 50%`;
+export const SFlag = styled.div`
+  cursor: pointer;`;
+
+export const SImgFlag = styled.img`
+  width: 50%;
+`;
 
 export const SFlagTranslateContainer = styled.div`
   display: flex;

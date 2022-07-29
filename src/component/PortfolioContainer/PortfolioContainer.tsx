@@ -3,7 +3,10 @@ import Footer from "../Footer/Footer";
 import Router from "../Router/Router";
 import React from "react";
 
-const PortfolioContainer = () => {
+interface IPortfolioContainer {
+}
+
+const PortfolioContainer = (props: IPortfolioContainer) => {
 
     return (
         <>
