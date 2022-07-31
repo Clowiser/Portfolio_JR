@@ -1,11 +1,25 @@
-import {LOCALES} from "./locales";
-
+export const locales = {
+    en: "en-US",
+    fr: "fr-FR",
+};
 export const message = {
-    [LOCALES.ENGLISH]: {
-        home_welcome_message: "Welcome !",
+    [locales.en]: {
+        //Home
+        home_title: "Home",
+        home_welcome_message: "Welcome!",
+        //Portfolio
+        portfolio_title: "Portfolio",
+        //Biographie
+        biographie_title: 'Who I am?',
     },
-    [LOCALES.FRENCH]: {
+    [locales.fr]: {
+        //Home
+        home_title: "Accueil",
         home_welcome_message: "Bienvenue !",
+        //Portfolio
+        portfolio_title: "PortfolioFR",
+        //Biographie
+        biographie_title: 'Qui suis-je ?',
     }
 };
 

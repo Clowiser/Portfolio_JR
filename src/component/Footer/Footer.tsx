@@ -1,5 +1,6 @@
 import React from "react";
-import {FormattedDate, useIntl} from "react-intl";
+import {useIntl} from "react-intl";
+import Counter from "../counter/Counter";
 
 const Footer = () => {
     const intl = useIntl();
@@ -16,7 +17,7 @@ const Footer = () => {
                     <li>Linkedin</li>
                     <li>GitHub</li>
                 </ul>
-  
+              
                 <p>{intl.formatDate(Date.now())}</p>
             </div>
         </>

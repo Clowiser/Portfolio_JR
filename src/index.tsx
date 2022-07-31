@@ -1,8 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import "./i18n/oldTranslate/I18n";
+import "./i18n/translate/I18n";
+import store from "./app/store";
+import {Provider} from "react-redux";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -10,7 +12,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
     <React.StrictMode>
-        <App/>
+        <Provider store={store}>
+            <App/>
+        </Provider>
     </React.StrictMode>
 );
 

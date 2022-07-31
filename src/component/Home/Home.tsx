@@ -29,7 +29,7 @@ const Home = () => {
                     et mon savoir-faire technique au service des utilisateurs et des entreprises !</p>
                 <p>Veuillez retrouver mes créations personnelles et mes créations réalisées dans le cadre
                     de ma formation au Campus Numérique in the ALPS de Chambéry, dans mon portfolio !</p>
-                <a href="htmls/portfolio.html"><h1>Portfolio</h1></a>
+                <a><h1>{intl.formatMessage({id: 'portfolio_title'})}</h1></a>
             </div>
         </>
     );
