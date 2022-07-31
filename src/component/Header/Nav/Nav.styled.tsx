@@ -25,7 +25,7 @@ export const SA = styled(Link)`
 export const SFlag = styled.div`
   cursor: pointer;`;
 
-export const SImgFlag = styled.img`
+export const SJRLogo = styled.img`
   width: 50%;
 `;
 

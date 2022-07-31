@@ -1,4 +1,4 @@
-import {SFlag, SFlagTranslateContainer, SImgFlag} from "../Nav.styled";
+import {SFlag, SFlagTranslateContainer, SJRLogo} from "../Nav.styled";
 import france_flag from "../../../../style/assets/img/flag/france.png";
 import great_britain_flag from "../../../../style/assets/img/flag/great_britain.png";
 import React, {createContext, useContext, useState} from "react";

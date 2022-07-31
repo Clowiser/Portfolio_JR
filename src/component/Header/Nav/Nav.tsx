@@ -1,6 +1,6 @@
 import logo_JR from "../../../style/assets/img/logo/JR_CA.png";
 import React from "react";
-import {SA, SImgFlag, SNavContainer, SUl} from "./Nav.styled";
+import {SA, SJRLogo, SNavContainer, SUl} from "./Nav.styled";
 import LocaleFlag from "./Flag/LocaleFlag";
 import {useIntl} from "react-intl";
 
@@ -14,7 +14,7 @@ const Nav = (props: INav) => {
     return (
         <SNavContainer>
             <SUl>
-                <li><SImgFlag src={logo_JR} alt="Logo du site Jessica Rigaud Créations"/></li>
+                <li><SJRLogo src={logo_JR} alt="Logo du site Jessica Rigaud Créations"/></li>
                 <SA to="/">
                     <li>{intl.formatMessage({id: 'home_title'})}</li>
                 </SA>
