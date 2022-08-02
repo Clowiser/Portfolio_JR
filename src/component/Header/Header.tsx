@@ -6,7 +6,6 @@ interface IHeader {
 }
 
 const Header = (props: IHeader) => {
-
     return (
         <>
             <Nav/>
