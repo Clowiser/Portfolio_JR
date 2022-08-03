@@ -1,12 +1,12 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 export const SPortfolioContainer = styled.div``;
 
 export const SPortfolioWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  margin: 4rem;
 `;
 
 export const SElementContainer = styled.div`
@@ -14,17 +14,28 @@ export const SElementContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 3rem;
+  width: 80%;
+  margin: 1rem auto;
 `;
 
 export const SElementImage = styled.img`
-  transform: scale(1);
   cursor: pointer;
-  width: 50%;
+  width: 100%;
+  border-radius: 1rem;
+  transform: scale(1);
 
   &:hover {
     transform: scale(1.15);
   }`;
+
+export const SElementWrapper = styled.div``;
+
+export const SPortfolioTitle = styled.h2`
+  text-align: center;
+  margin: 1rem;
+`;
+
+export const SElementText = styled.div``;
 
 export const SShareLogoContainer = styled.div``;
 
@@ -39,3 +50,4 @@ export const SShareLogo = styled.img`
   }
 `;
 
+export const SPortfolioDetailsLink = styled(Link)``;

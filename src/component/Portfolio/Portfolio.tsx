@@ -1,19 +1,21 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import {SCircleImg, SListUnique, SRealisationList, SRealisationWrapper} from "../Home/Realisations/Realisation.styled";
 import {
     SElementContainer,
-    SElementImage,
-    SPortfolioContainer,
+    SElementImage, SElementText, SElementWrapper,
+    SPortfolioContainer, SPortfolioTitle,
     SPortfolioWrapper,
     SShareLogo,
     SShareLogoContainer
 } from "./Portfolio.styled";
-import {SNetworkLogo} from "../Footer/Footer.styled";
 import logo_Github from "../../style/assets/img/logo/github_logo.png";
 import logo_Netlify from "../../style/assets/img/logo/netlify_logo.png";
+import logo_Figma from "../../style/assets/img/logo/figma_logo.png";
+import {useIntl} from "react-intl";
+import PortfolioDetails from "./PortfolioDetails";
 
 const Portfolio = () => {
+    const intl = useIntl();
     const [data, setData] = useState<any[]>([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false)
@@ -24,7 +26,6 @@ const Portfolio = () => {
             .then(res => {
                 setData(res.data)
                 setLoading(false);
-                console.log(res.data);
             })
             .catch(error => {
                 setError(error);
@@ -32,25 +33,34 @@ const Portfolio = () => {
             })
     }, []);
 
+    if (error) {
+        return <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
+    }
+    if (loading) {
+        return <p>{intl.formatMessage({id: 'loading_api_loading'})}</p>
+    }
+
+
     return (
         <SPortfolioContainer>
+            <SPortfolioTitle>{intl.formatMessage({id: 'portfolio_first_title'})}</SPortfolioTitle>
+            <p style={{textAlign: "center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod</p>
             <SPortfolioWrapper>
                 {data.map((element) => {
                     return (
                         <div key={element.id}>
-                            <div>
-                                <SElementContainer>
-                                    <SElementImage src={element.image} alt={"img" + element.id}/>
+                            <SElementContainer>
+                                <SElementImage src={element.image} alt={"img" + element.id}/>
+                                <SElementText>
                                     <p>{element.title}</p>
-                                    <p>{element.subtitle}</p>
-                                    <p>{element.description}</p>
-                                    <SShareLogoContainer>
-                                        {element.github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}
-                                        {element.netifly_boolean === "true" ? <SShareLogo src={logo_Netlify}/> : null}
-                                    </SShareLogoContainer>
-                                </SElementContainer>
-
-                            </div>
+                                </SElementText>
+                                {/*<SShareLogoContainer>*/}
+                                {/*    {element.github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}*/}
+                                {/*    {element.netifly_boolean === "true" ? <SShareLogo src={logo_Netlify}/> : null}*/}
+                                {/*    {element.figma_boolean === "true" ? <SShareLogo src={logo_Figma}/> : null}*/}
+                                {/*</SShareLogoContainer>*/}
+                            </SElementContainer>
                         </div>
                     )
                 })}

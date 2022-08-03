@@ -22,7 +22,6 @@ const Realisation = () => {
             .then(res => {
                 setData(res.data)
                 setLoading(false);
-                console.log(res.data);
             })
             .catch(error => {
                 setError(error);

@@ -32,6 +32,7 @@ export const message = {
         skill_title_Github_developer: "GitHub",
         //Portfolio
         portfolio_title: "Portfolio",
+        portfolio_first_title: "My Recent Work",
         //Biographie
         biographie_title: 'Who I am?',
         //Footer
@@ -67,6 +68,7 @@ export const message = {
         skill_title_Github_developer: "GitHub",
         //Portfolio
         portfolio_title: "Portfolio",
+        portfolio_first_title: "Mes travaux récents",
         //Biographie
         biographie_title: 'Qui suis-je ?',
         //Footer
