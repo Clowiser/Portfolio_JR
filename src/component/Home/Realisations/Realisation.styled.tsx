@@ -32,5 +32,11 @@ export const SCircleImg = styled.img`
   width: 70%;
   margin: auto;
   filter: drop-shadow(10px 4px 6px #c9c7c7);
+  transform: scale(1);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 `;
 

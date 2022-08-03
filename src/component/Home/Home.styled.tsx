@@ -10,12 +10,12 @@ export const SHeaderContainer = styled.h1`
 `;
 
 export const SHeaderTitle = styled.div`
+  text-align: center;
 `;
 
 
 export const SPresentationContainer = styled.div`
-  background-color: #efefef;
-  //background: linear-gradient(#690d88, #530979, #00d4ff);
+  //background-color: #efefef;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,4 +41,6 @@ export const SPresentationText = styled.div`
 
 export const SPresentationLink = styled(Link)`
   margin-top: 1rem;
-  text-align: center`;
+  text-align: center;
+  text-decoration: none;
+`;
