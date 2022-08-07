@@ -22,7 +22,6 @@ const useModal = (props: IUseModalProps): IUseModal => {
     const [modal, setModal] = useState<React.ReactNode>(defaultContent)
 
     const openModal = (): void => {
-
         setShowModal(true);
     }
 

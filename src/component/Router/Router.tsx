@@ -3,7 +3,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import Information from "../Information/Information";
 import React from "react";
 import Home from "../Home/Home";
-import PortfolioDetailPage from "../Portfolio/PortfolioDetailPage";
+import PortfolioDetailPage from "../ unguarded/PortfolioDetailPage";
 
 const Router: React.FC = () => {
 

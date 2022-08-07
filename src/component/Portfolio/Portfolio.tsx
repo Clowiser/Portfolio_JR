@@ -11,7 +11,7 @@ import {Link} from "react-router-dom";
 import {useIntl} from "react-intl";
 import useModal from "../utils/Hooks/useModal";
 import {SModal} from "../utils/Modal/Modal.styled";
-import TestModal from "./TestModal";
+import TestModal from "../ unguarded/TestModal";
 import PortfolioDetailModal from "./PortfolioDetailModal";
 
 

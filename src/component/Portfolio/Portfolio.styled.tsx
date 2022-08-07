@@ -61,7 +61,6 @@ export const SElementDetailWrapper = styled.div`
 `;
 
 export const SElementImageDetail = styled.img`
-  cursor: pointer;
   width: 50%;
   border-radius: 1rem;
 `;

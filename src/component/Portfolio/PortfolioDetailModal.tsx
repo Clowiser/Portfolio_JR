@@ -10,7 +10,7 @@ import logo_Netlify from "../../style/assets/img/logo/netlify_logo.png";
 import logo_Figma from "../../style/assets/img/logo/figma_logo.png";
 import useModal from "../utils/Hooks/useModal";
 import {SModal} from "../utils/Modal/Modal.styled";
-import TestModal from "./TestModal";
+import TestModal from "../ unguarded/TestModal";
 import {log} from "util";
 
 interface IPortfolioDetailModal {
