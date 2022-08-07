@@ -1,6 +1,6 @@
 import {
-    SElementContainer, SElementDetailWrapper, SElementDetailImageInfos,
-    SElementImage, SElementImageDetail,
+    SElementDetailWrapper, SElementDetailImageInfos,
+    SElementImageDetail,
     SPortfolioDetailContainer,
     SShareLogo,
     SShareLogoContainer, SElementDetailInfos
@@ -11,6 +11,7 @@ import logo_Figma from "../../style/assets/img/logo/figma_logo.png";
 import useModal from "../utils/Hooks/useModal";
 import {SModal} from "../utils/Modal/Modal.styled";
 import TestModal from "./TestModal";
+import PortfolioDetailModal from "./PortfolioDetailModal";
 
 interface IPortfolioDetail {
     data: any;
@@ -24,15 +25,15 @@ const PortfolioDetail = (props: IPortfolioDetail) => {
         <SPortfolioDetailContainer>
             <div key={data[0].id}>
                 <SElementDetailWrapper>
-                    <button onClick={(): void => {
-                        setModal(
-                            <TestModal closeModal={closeModal}/>
-                        )
-                        openModal();
-                    }}>
-                        Test
-                    </button>
-                    {modal}
+                    {/*<button onClick={(): void => {*/}
+                    {/*    setModal(*/}
+                    {/*        <TestModal closeModal={closeModal}/>*/}
+                    {/*    )*/}
+                    {/*    openModal();*/}
+                    {/*}}>*/}
+                    {/*    Test*/}
+                    {/*</button>*/}
+                    {/*{modal}*/}
                     <SElementDetailImageInfos>
                         <SElementImageDetail src={data[0].image} alt={"img" + data[0].id}/>
                         <SElementDetailInfos>
