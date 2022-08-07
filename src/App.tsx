@@ -1,9 +1,9 @@
-import React, {createContext, useEffect, useState} from 'react';
+import React, {createContext, useState} from 'react';
 import './style/App.css';
 import {BrowserRouter} from "react-router-dom";
 import PortfolioContainer from "./component/PortfolioContainer/PortfolioContainer";
 import message, {locales} from "./i18n/translate/message";
-import {IntlProvider, useIntl} from "react-intl";
+import {IntlProvider} from "react-intl";
 
 export const languageContext = createContext({});
 
@@ -13,6 +13,7 @@ const App = () => {
     const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>): void => {
         setInitLocal(event.target.value);
     };
+    
 
     return (
         <BrowserRouter>

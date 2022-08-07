@@ -32,7 +32,8 @@ export const message = {
         skill_title_Github_developer: "GitHub",
         //Portfolio
         portfolio_title: "Portfolio",
-        portfolio_first_title: "My Recent Work",
+        portfolio_first_title: "My Web Work",
+        portfolio_subtitle: "",
         //Biographie
         biographie_title: 'Who I am?',
         //Footer
@@ -68,7 +69,8 @@ export const message = {
         skill_title_Github_developer: "GitHub",
         //Portfolio
         portfolio_title: "Portfolio",
-        portfolio_first_title: "Mes travaux récents",
+        portfolio_first_title: "Mes travaux dans le web",
+        portfolio_subtitle: "Mes réalisations faites au Campus Numérique in the Alps de Chambéry, et en dehors !",
         //Biographie
         biographie_title: 'Qui suis-je ?',
         //Footer

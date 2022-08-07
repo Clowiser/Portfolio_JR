@@ -11,6 +11,7 @@
     "@types/node": "^16.11.34",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.3",
+    "@types/styled-react-modal": "^1.2.2",
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
@@ -24,6 +25,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "styled-components": "^5.3.5",
+    "styled-react-modal": "^3.0.0",
     "typescript": "^4.6.4",
     "web-vitals": "^2.1.4"
   },

@@ -21,7 +21,7 @@ const Nav = (props: INav) => {
                 <SA to="/portfolio">
                     <li>{intl.formatMessage({id: 'portfolio_title'})}</li>
                 </SA>
-                <SA to="/biographie">
+                <SA to="/about">
                     <li>{intl.formatMessage({id: 'biographie_title'})}</li>
                 </SA>
                 <LocaleFlag/>

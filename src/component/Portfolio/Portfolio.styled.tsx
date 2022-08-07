@@ -37,8 +37,6 @@ export const SPortfolioTitle = styled.h2`
 
 export const SElementText = styled.div``;
 
-export const SShareLogoContainer = styled.div``;
-
 export const SShareLogo = styled.img`
   width: 2.5rem;
   transform: scale(1);
@@ -51,3 +49,34 @@ export const SShareLogo = styled.img`
 `;
 
 export const SPortfolioDetailsLink = styled(Link)``;
+
+
+// Portfolio Details
+export const SPortfolioDetailContainer = styled.div`
+  display: flex`;
+
+export const SElementDetailWrapper = styled.div`
+  display: flex;
+  margin: 5rem;
+`;
+
+export const SElementImageDetail = styled.img`
+  cursor: pointer;
+  width: 50%;
+  border-radius: 1rem;
+`;
+
+export const SElementDetailImageInfos = styled.div`
+  display: flex;
+
+`;
+export const SElementDetailInfos = styled.div`
+  margin-left: 1rem;
+`;
+
+export const SShareLogoContainer = styled.div`
+  text-align: center`;
+
+
+
+

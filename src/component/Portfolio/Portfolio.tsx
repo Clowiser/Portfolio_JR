@@ -2,17 +2,14 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {
     SElementContainer,
-    SElementImage, SElementText, SElementWrapper,
-    SPortfolioContainer, SPortfolioTitle,
+    SElementImage, SElementText,
+    SPortfolioContainer, SPortfolioDetailsLink,
+    SPortfolioTitle,
     SPortfolioWrapper,
-    SShareLogo,
-    SShareLogoContainer
 } from "./Portfolio.styled";
-import logo_Github from "../../style/assets/img/logo/github_logo.png";
-import logo_Netlify from "../../style/assets/img/logo/netlify_logo.png";
-import logo_Figma from "../../style/assets/img/logo/figma_logo.png";
+import {Link} from "react-router-dom";
 import {useIntl} from "react-intl";
-import PortfolioDetails from "./PortfolioDetails";
+
 
 const Portfolio = () => {
     const intl = useIntl();
@@ -51,15 +48,12 @@ const Portfolio = () => {
                     return (
                         <div key={element.id}>
                             <SElementContainer>
-                                <SElementImage src={element.image} alt={"img" + element.id}/>
+                                <SPortfolioDetailsLink to={`/portfolio/${element.id}`}>
+                                    <SElementImage src={element.image} alt={"img" + element.id}/>
+                                </SPortfolioDetailsLink>
                                 <SElementText>
                                     <p>{element.title}</p>
                                 </SElementText>
-                                {/*<SShareLogoContainer>*/}
-                                {/*    {element.github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}*/}
-                                {/*    {element.netifly_boolean === "true" ? <SShareLogo src={logo_Netlify}/> : null}*/}
-                                {/*    {element.figma_boolean === "true" ? <SShareLogo src={logo_Figma}/> : null}*/}
-                                {/*</SShareLogoContainer>*/}
                             </SElementContainer>
                         </div>
                     )
