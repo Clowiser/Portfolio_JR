@@ -1,6 +1,6 @@
 import {Route, Routes} from "react-router-dom";
 import PortfolioWebWork from "../Portfolio/WebWork/PortfolioWebWork";
-import Information from "../Information/Information";
+import About from "../About/About";
 import React from "react";
 import Home from "../Home/Home";
 import PortfolioDetailPage from "../ unguarded/PortfolioDetailPage";
@@ -15,7 +15,7 @@ const Router: React.FC = () => {
             <Route path="/portfolio" element={<PortfolioIndex/>}/>
             {/*<Route path="/portfolio/:portfolioId" element={<PortfolioDetailPage/>}/>*/}
 
-            <Route path="/about" element={<Information/>}/>
+            <Route path="/about" element={<About/>}/>
 
         </Routes>
     );

@@ -5,7 +5,7 @@ export const SSkillsContainer = styled.div`
   justify-content: space-around;
   text-align: center;
   margin: 4rem auto;
-  background-color: whitesmoke;
+  background-color: whitesmoke;;
   border-radius: 1rem;
   width: 50rem;
   padding: 2rem;

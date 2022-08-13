@@ -20,7 +20,7 @@ const Nav = () => {
                     <li>{intl.formatMessage({id: 'portfolio_title'})}</li>
                 </SA>
                 <SA to="/about">
-                    <li>{intl.formatMessage({id: 'biographie_title'})}</li>
+                    <li>{intl.formatMessage({id: 'about_title'})}</li>
                 </SA>
                 <LocaleFlag/>
             </SUl>

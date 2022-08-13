@@ -3,7 +3,8 @@ import {Link} from "react-router-dom";
 // @ts-ignore
 import {HashLink} from "react-router-hash-link";
 
-export const SPortfolioContainer = styled.div``;
+export const SPortfolioContainer = styled.div`
+  margin: 2rem`;
 
 export const SPortfolioContainerLink = styled.div`
   margin: 2rem;
@@ -22,7 +23,7 @@ export const SPortfolioHashLink = styled(HashLink)`
 
 export const SPortfolioWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 `;
 
@@ -32,7 +33,7 @@ export const SElementContainer = styled.div`
   align-items: center;
   text-align: center;
   width: 80%;
-  margin: 1rem auto;
+  margin: 3rem auto;
 `;
 
 export const SElementImage = styled.img`
@@ -54,7 +55,7 @@ export const SSoftwareDevIcons = styled.img`
   position: absolute;
   z-index: 2;
   top: -1.5rem;
-  left: -13rem;
+  left: -20rem;
   width: 4rem`;
 
 export const SPortfolioTitle = styled.h2`

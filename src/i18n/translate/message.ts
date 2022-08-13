@@ -40,7 +40,8 @@ export const message = {
         portfolio_graphic_literary_work_title: "Literary Work",
         portfolio_subtitle: "",
         //Biographie
-        biographie_title: 'Who I am?',
+        about_title: 'Who I am?',
+        about_presentation: "",
         //Footer
         Footer_copyright: "Copyright by me 2022",
         Footer_Motto: "Fulfill yourself, keep learning and level up",
@@ -82,7 +83,8 @@ export const message = {
         portfolio_graphic_literary_work_title: "Créations Littéraire",
         portfolio_subtitle: "Mes réalisations faites au Campus Numérique in the Alps de Chambéry, et en dehors !",
         //Biographie
-        biographie_title: 'Qui suis-je ?',
+        about_title: 'Qui suis-je ?',
+        about_presentation: "",
         //Footer
         Footer_copyright: "Copyright Jessica Rigaud 2022",
         Footer_Motto: "Se réaliser, continuer d'apprendre et passer au niveau supérieur",
