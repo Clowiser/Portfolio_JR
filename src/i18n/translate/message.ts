@@ -30,9 +30,14 @@ export const message = {
         skill_title_react_developer: "React",
         skill_title_typescript_developer: "TypeScript",
         skill_title_Github_developer: "GitHub",
-        //Portfolio
+        //PortfolioWebWork
         portfolio_title: "Portfolio",
-        portfolio_first_title: "My Web Work",
+        portfolio_web_work_title: "My Web Work",
+        portfolio_web_work_subtitle: "From project management to the creation of an application, find all of my work carried out during my training at the Digital Campus in the ALPS and outside",
+        portfolio_graphic_work_title: "My Design Work",
+        portfolio_graphic_illustrations_work_title: "Digital Illustrations",
+        portfolio_graphic_3D_work_title: "3D Work",
+        portfolio_graphic_literary_work_title: "Literary Work",
         portfolio_subtitle: "",
         //Biographie
         biographie_title: 'Who I am?',
@@ -67,9 +72,14 @@ export const message = {
         skill_title_react_developer: "React",
         skill_title_typescript_developer: "TypeScript",
         skill_title_Github_developer: "GitHub",
-        //Portfolio
+        //PortfolioWebWork
         portfolio_title: "Portfolio",
-        portfolio_first_title: "Mes travaux dans le web",
+        portfolio_web_work_title: "Mes travaux dans le web",
+        portfolio_web_work_subtitle: "De la gestion de projet à la création d'une application, retrouvez l'ensemble de mes travaux réalisés lors de ma formation au Campus Numérique in the ALPS et en dehors",
+        portfolio_graphic_work_title: "Mes travaux dans la création",
+        portfolio_graphic_illustrations_work_title: "Illustrations Numériques",
+        portfolio_graphic_3D_work_title: "Créations 3D",
+        portfolio_graphic_literary_work_title: "Créations Littéraire",
         portfolio_subtitle: "Mes réalisations faites au Campus Numérique in the Alps de Chambéry, et en dehors !",
         //Biographie
         biographie_title: 'Qui suis-je ?',

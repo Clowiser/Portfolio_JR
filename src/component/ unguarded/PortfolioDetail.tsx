@@ -11,7 +11,7 @@ import logo_Figma from "../../style/assets/img/logo/figma_logo.png";
 import useModal from "../utils/Hooks/useModal";
 import {SModal} from "../utils/Modal/Modal.styled";
 
-import PortfolioDetailModal from "../Portfolio/PortfolioDetailModal";
+import PortfolioDetailModal from "../Portfolio/WebWork/PortfolioWebWorkDetailModal";
 
 interface IPortfolioDetail {
     data: any;

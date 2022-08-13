@@ -1,7 +1,24 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+// @ts-ignore
+import {HashLink} from "react-router-hash-link";
 
 export const SPortfolioContainer = styled.div``;
+
+export const SPortfolioContainerLink = styled.div`
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+`;
+
+export const SPortfolioWrapperLink = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+`;
+
+export const SPortfolioHashLink = styled(HashLink)`
+  text-decoration: none`;
 
 export const SPortfolioWrapper = styled.div`
   display: grid;
@@ -30,6 +47,16 @@ export const SElementImage = styled.img`
 
 export const SElementWrapper = styled.div``;
 
+export const SSoftwareDevIconsContainer = styled.div`
+  position: relative`;
+
+export const SSoftwareDevIcons = styled.img`
+  position: absolute;
+  z-index: 2;
+  top: -1.5rem;
+  left: -13rem;
+  width: 4rem`;
+
 export const SPortfolioTitle = styled.h2`
   text-align: center;
   margin: 1rem;
@@ -51,7 +78,7 @@ export const SShareLogo = styled.img`
 export const SPortfolioDetailsLink = styled(Link)``;
 
 
-// Portfolio Details
+// PortfolioWebWork Details
 export const SPortfolioDetailContainer = styled.div`
   display: flex`;
 

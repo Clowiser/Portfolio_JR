@@ -27,6 +27,10 @@ export const SFlag = styled.div`
 
 export const SJRLogo = styled.img`
   width: 50%;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.15);
 `;
 
 export const SFlagTranslateContainer = styled.div`
