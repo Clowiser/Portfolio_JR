@@ -36,3 +36,6 @@ export const SJRLogo = styled.img`
 export const SFlagTranslateContainer = styled.div`
   display: flex;
   width: 8rem`;
+
+export const SImgFlag = styled.img`
+  width: 2rem`;

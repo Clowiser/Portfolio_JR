@@ -6,6 +6,7 @@ import "./i18n/translate/I18n";
 import store from "./app/store";
 import {Provider} from "react-redux";
 
+
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );

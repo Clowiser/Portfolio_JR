@@ -1,16 +1,14 @@
-import {SFlag, SFlagTranslateContainer, SJRLogo} from "../Nav.styled";
+import {SFlag, SFlagTranslateContainer, SImgFlag, SJRLogo} from "../Nav.styled";
 import france_flag from "../../../../style/assets/img/flag/france.png";
 import great_britain_flag from "../../../../style/assets/img/flag/great_britain.png";
-import React, {createContext, useContext, useState} from "react";
+import React, {useContext} from "react";
 import {languageContext} from "../../../../App";
-import i18next from "i18next";
 import {locales} from "../../../../i18n/translate/message";
-import {log} from "util";
+
 
 const LocaleFlag = () => {
     // @ts-ignore
     const {initLocal, handleSelect} = useContext(languageContext);
-
     return (
         <>
             <select onChange={handleSelect} defaultValue={initLocal}>
@@ -18,6 +16,8 @@ const LocaleFlag = () => {
                     <option key={l}>{l}</option>
                 ))}
             </select>
+            {initLocal === locales.fr ? <SImgFlag src={france_flag} alt="Drapeau Français"/> :
+                <SImgFlag src={great_britain_flag} alt="Drapeau anglais"/>}
             {/*<SFlagTranslateContainer>*/}
             {/*    <SFlag onClick={() => handleLanguageEn(locales.fr)} defaultValue={initLocalD}>*/}
             {/*        <SImgFlag src={france_flag}*/}

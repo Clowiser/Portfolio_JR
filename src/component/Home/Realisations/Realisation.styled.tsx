@@ -4,7 +4,10 @@ export const SRealisationContainer = styled.div`
   margin: 4rem;
 `;
 
-export const SRealisationTitle = styled.h2``;
+export const SRealisationTitle = styled.h2`
+  font-family: 'ChunkFive', Calibri, serif;
+  letter-spacing: 0.2rem;
+`;
 
 export const SRealisationWrapper = styled.div`
   display: inline-block;

@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
 
 export const SPortfolioContainer = styled.div`
-  margin: 2rem`;
+  margin: 2.5rem;
+`;
 
 export const SPortfolioContainerLink = styled.div`
   margin: 2rem;
@@ -55,8 +56,8 @@ export const SSoftwareDevIcons = styled.img`
   position: absolute;
   z-index: 2;
   top: -1.5rem;
-  left: -20rem;
-  width: 4rem`;
+  left: -17rem;
+  width: 3.5rem`;
 
 export const SPortfolioTitle = styled.h2`
   text-align: center;

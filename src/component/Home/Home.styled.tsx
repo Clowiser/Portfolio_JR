@@ -9,10 +9,12 @@ export const SHeaderContainer = styled.h1`
   color: #262223;
 `;
 
-export const SHeaderTitle = styled.div`
+export const SHeaderTitle = styled.h3`
+  font-family: 'ChunkFive', Calibri, serif;
   text-align: center;
+  letter-spacing: 0.2rem;
+  width: 80%;
 `;
-
 
 export const SPresentationContainer = styled.div`
   //background-color: #efefef;
@@ -33,7 +35,10 @@ export const SPresentationWrapper = styled.div`
   flex-direction: column;
 `;
 
-export const SPresentationTitle = styled.h1``;
+export const SPresentationTitle = styled.h1`
+  font-family: 'ChunkFive', Calibri, serif;
+  letter-spacing: 0.2rem;
+`;
 
 export const SPresentationText = styled.div`
   margin-top: 1rem;
@@ -44,3 +49,6 @@ export const SPresentationLink = styled(Link)`
   text-align: center;
   text-decoration: none;
 `;
+
+export const SImg = styled.img`
+  width: 100%`;

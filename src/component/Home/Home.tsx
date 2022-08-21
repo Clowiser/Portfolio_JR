@@ -1,7 +1,7 @@
 import React from "react";
 import {
     SHeaderContainer,
-    SHeaderTitle,
+    SHeaderTitle, SImg,
     SPresentationContainer, SPresentationLink,
     SPresentationText,
     SPresentationTitle, SPresentationWrapper
@@ -10,6 +10,8 @@ import BannerAnimation from "../BannerAnimation/BannerAnimation";
 import {useIntl} from "react-intl";
 import Realisation from "./Realisations/Realisation";
 import Skills from "../Skills/Skills";
+import avatar from "../../style/assets/img/banner/Avatardev.png"
+import LogoPage from "./LogoPage/LogoPage";
 
 const Home = () => {
     const intl = useIntl();
@@ -21,7 +23,9 @@ const Home = () => {
                     {intl.formatMessage({id: 'home_header_title'})}
                 </SHeaderTitle>
             </SHeaderContainer>
-            <BannerAnimation/>
+            <SImg src={avatar} alt="logo JR"/>
+            <LogoPage/>
+            {/*<BannerAnimation/>*/}
             <SPresentationContainer>
                 <SPresentationWrapper>
                     <SPresentationTitle>{intl.formatMessage({id: 'home_welcome_message'})}</SPresentationTitle>

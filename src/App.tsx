@@ -4,6 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import PortfolioContainer from "./component/PortfolioContainer/PortfolioContainer";
 import message, {locales} from "./i18n/translate/message";
 import {IntlProvider} from "react-intl";
+import FontsStyle from "./fonts/FontsStyle";
 
 export const languageContext = createContext({});
 
@@ -13,13 +14,13 @@ const App = () => {
     const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>): void => {
         setInitLocal(event.target.value);
     };
-    
 
     return (
         <BrowserRouter>
             <IntlProvider locale={initLocal} defaultLocale={locales.fr} messages={message[initLocal]}
             >
                 <languageContext.Provider value={{initLocal, handleSelect}}>
+                    <FontsStyle/>
                     <PortfolioContainer/>
                 </languageContext.Provider>
             </IntlProvider>

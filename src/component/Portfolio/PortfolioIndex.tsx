@@ -29,6 +29,7 @@ const PortfolioIndex = (): JSX.Element => {
             <SPortfolioTitle id="web">{intl.formatMessage({id: 'portfolio_web_work_title'})}</SPortfolioTitle>
             <p style={{textAlign: "center"}}>{intl.formatMessage({id: 'portfolio_web_work_subtitle'})}</p>
             <PortfolioWebWork/>
+            <hr/>
             <SPortfolioTitle id="graphics">{intl.formatMessage({id: 'portfolio_graphic_work_title'})}</SPortfolioTitle>
             <h3 style={{textAlign: "center"}}>{intl.formatMessage({id: 'portfolio_graphic_illustrations_work_title'})}</h3>
             <PortfolioGraphicDigitalWork/>

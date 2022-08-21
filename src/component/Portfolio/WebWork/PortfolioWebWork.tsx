@@ -51,7 +51,7 @@ const PortfolioWebWork = (): JSX.Element => {
                             {/*    <SElementImage src={element.image} alt={"img" + element.id}/>*/}
                             {/*</SPortfolioDetailsLink>*/}
                             <SSoftwareDevIconsContainer>
-                                <SSoftwareDevIcons src={element.icon_section} alt={"icone software development"}>
+                                <SSoftwareDevIcons src={element.icon_section} alt={"icons software development"}>
                                 </SSoftwareDevIcons>
                             </SSoftwareDevIconsContainer>
                             <SElementImage src={element.image} alt={"img" + element.id} onClick={(): void => {

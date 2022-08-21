@@ -14,6 +14,12 @@ export const SSkillsContainer = styled.div`
 export const SSkillsWrapper = styled.div`
   width: 23rem;
   padding: 0;
+
+  > h2 {
+    font-family: 'ChunkFive', Calibri, serif;
+    letter-spacing: 0.2rem;
+  }
+
 `;
 
 export const SSkillsList = styled.li`
