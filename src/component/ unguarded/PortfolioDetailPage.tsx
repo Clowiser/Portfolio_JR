@@ -6,9 +6,7 @@ import PortfolioDetail from "./PortfolioDetail";
 
 const PortfolioDetailPage = () => {
     const intl = useIntl();
-
-    const {portfolioId} = useParams();
-
+    const {id} = useParams();
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false)
@@ -16,7 +14,7 @@ const PortfolioDetailPage = () => {
     useEffect(() => {
         const fetchArticle = () => {
             setLoading(true)
-            axios.get(`http://localhost:3000/api/portfolio_realisations/${portfolioId}`)
+            axios.get(`http://localhost:3000/api/portfolio_web_realisations/${id}`)
                 .then(res => {
                     setData(res.data)
                     setLoading(false);
@@ -26,7 +24,7 @@ const PortfolioDetailPage = () => {
                 })
         };
         fetchArticle();
-    }, [portfolioId]);
+    }, [id]);
 
     if (error) {
         return <p>{intl.formatMessage({id: 'loading_api_error'})}</p>

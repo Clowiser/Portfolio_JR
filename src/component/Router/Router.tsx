@@ -5,6 +5,7 @@ import React from "react";
 import Home from "../Home/Home";
 import PortfolioDetailPage from "../ unguarded/PortfolioDetailPage";
 import PortfolioIndex from "../Portfolio/PortfolioIndex";
+import AboutChrono from "../About/AboutChrono";
 
 const Router: React.FC = () => {
 
@@ -13,9 +14,11 @@ const Router: React.FC = () => {
             <Route path="/" element={<Home/>}/>
 
             <Route path="/portfolio" element={<PortfolioIndex/>}/>
-            {/*<Route path="/portfolio/:portfolioId" element={<PortfolioDetailPage/>}/>*/}
+            <Route path="/portfolio/:id" element={<PortfolioDetailPage/>}/>
 
             <Route path="/about" element={<About/>}/>
+
+            <Route path="/aboutChrono" element={<AboutChrono/>}/>
 
         </Routes>
     );

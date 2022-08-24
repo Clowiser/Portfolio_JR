@@ -41,5 +41,6 @@ export const SAboutTextRight = styled.div`
   right: -8rem;
 `;
 
-export const SAboutSectionCV = styled.div``;
+export const SAboutSectionCV = styled.div`
+  text-align: center;`;
 

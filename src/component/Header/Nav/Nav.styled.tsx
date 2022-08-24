@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 export const SNavContainer = styled.nav`
   background-color: #efefef;
   list-style-type: none;
+  padding: 1rem 0;
 `;
 
 export const SUl = styled.div`
@@ -26,7 +27,7 @@ export const SFlag = styled.div`
   cursor: pointer;`;
 
 export const SJRLogo = styled.img`
-  width: 50%;
+  width: 20%;
   transform: scale(1);
 
   &:hover {

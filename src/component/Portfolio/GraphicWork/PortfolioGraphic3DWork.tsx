@@ -27,7 +27,7 @@ const PortfolioGraphic3DWork = () => {
             })
     }, []);
 
-    
+
     if (error) {
         return <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
     }
@@ -41,6 +41,7 @@ const PortfolioGraphic3DWork = () => {
                 return (
                     <div key={element.id}>
                         <SElementContainer>
+                            {/*<SElementImage src={element.image} alt={"img" + element.id}/>*/}
                             <SElementImage src={element.image} alt={"img" + element.id} onClick={(): void => {
                                 setModal(
                                     <PortfolioDetailModal element={element} closeModal={closeModal}/>

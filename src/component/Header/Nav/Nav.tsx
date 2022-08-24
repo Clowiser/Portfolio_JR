@@ -1,4 +1,4 @@
-import logo_JR from "../../../style/assets/img/logo/JR_CA.png";
+import logo_JR from "../../../style/assets/img/logo/JR_logo.png"
 import React from "react";
 import {SA, SJRLogo, SNavContainer, SUl} from "./Nav.styled";
 import LocaleFlag from "./Flag/LocaleFlag";
@@ -21,6 +21,9 @@ const Nav = () => {
                 </SA>
                 <SA to="/about">
                     <li>{intl.formatMessage({id: 'about_title'})}</li>
+                </SA>
+                <SA to="/aboutChrono">
+                    <li>TEST</li>
                 </SA>
                 <LocaleFlag/>
             </SUl>

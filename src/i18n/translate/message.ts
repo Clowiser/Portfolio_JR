@@ -2,6 +2,8 @@ export const locales = {
     en: "en-US",
     fr: "fr-FR",
 };
+// REVOIR TOUS LES TEXTES
+
 export const message = {
     [locales.en]: {
         //General
@@ -52,14 +54,14 @@ export const message = {
         loading_api_loading: "Chargement, veuillez patienter...",
         //Home
         home_title: "Accueil",
-        home_header_title: "Exploratrice de l'Imaginaire & Développeuse Frontend Junior",
+        home_header_title: "Développeuse Frontend Junior & Exploratrice de l'Imaginaire",
         home_welcome_message: "Bonjour Monde !",
-        home_reconversion_text: "Artiste en herbe connectée et Apprentie développeuse frontend, je vous souhaite la bienvenue ! Aujourd'hui, en pleine reconversion dans l'univers du numérique en tant que Développeuse Front-End, je souhaite mettre mes compétences créatives et mon savoir-faire technique au service des utilisateurs et des entreprises !",
+        home_reconversion_text: "REVOIR TEXTE - Artiste en herbe connectée et Apprentie développeuse frontend, je vous souhaite la bienvenue ! En pleine reconversion dans l'univers de l'informatique en tant que Développeuse Front-End, je souhaite mettre mes compétences créatives et mon savoir-faire technique au service des utilisateurs et des entreprises !",
         home_find_creation: "Veuillez retrouver l'ensemble de mes créations dans mon portfolio !",
         realisation_title: "Ils m'ont fait confiance !",
         skill_title_imaginary: "Exploratrice de l'Imaginaire",
-        skill_subtitle_imaginary: "Armée de mon croquis depuis l'enfance, je me plais à créer et transfert mes appétences dans le milieu digital",
-        skill_title_list_imaginary: "Les pinceaux de la Création",
+        skill_subtitle_imaginary: "Armée de mon carnet ou de ma tablette, je me plais à imaginer et à créer ... ! ",
+        skill_title_list_imaginary: "Les pinceaux de la création",
         skill_title_list_pen_paper_imaginary: "Crayon et papier",
         skill_title_list_stylet_tablette_imaginary: "Stylet et tablette",
         skill_title_list_figma_imaginary: "Figma",
@@ -67,8 +69,8 @@ export const message = {
         skill_title_list_blender_imaginary: "Blender",
         skill_title_list_photoshop_imaginary: "Photoshop",
         skill_title_developer: "Développeuse Frontend Junior",
-        skill_subtitle_developer: "Armée de mon croquis depuis l'enfance, je me plais à créer et transfert mes appétences dans le milieu digital",
-        skill_title_list_developer: "Les outils de Développement",
+        skill_subtitle_developer: "Bloc par bloc, j'accumule mes connaissances pour blabla ... ",
+        skill_title_list_developer: "Les outils du développement",
         skill_title_html_css_developer: "HTML/CSS/JS",
         skill_title_react_developer: "React",
         skill_title_typescript_developer: "TypeScript",

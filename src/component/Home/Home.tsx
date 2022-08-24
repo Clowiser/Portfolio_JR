@@ -24,15 +24,14 @@ const Home = () => {
                 </SHeaderTitle>
             </SHeaderContainer>
             <SImg src={avatar} alt="logo JR"/>
-            <LogoPage/>
             {/*<BannerAnimation/>*/}
             <SPresentationContainer>
                 <SPresentationWrapper>
                     <SPresentationTitle>{intl.formatMessage({id: 'home_welcome_message'})}</SPresentationTitle>
                     <SPresentationText>{intl.formatMessage({id: 'home_reconversion_text'})}</SPresentationText>
-                    <SPresentationText>{intl.formatMessage({id: 'home_find_creation'})}</SPresentationText>
-                    <SPresentationLink
-                        to="/portfolio">{intl.formatMessage({id: 'portfolio_title'})}</SPresentationLink>
+                    {/*<SPresentationText>{intl.formatMessage({id: 'home_find_creation'})}</SPresentationText>*/}
+                    {/*<SPresentationLink*/}
+                    {/*    to="/portfolio">{intl.formatMessage({id: 'portfolio_title'})}</SPresentationLink>*/}
                 </SPresentationWrapper>
             </SPresentationContainer>
             <Skills/>

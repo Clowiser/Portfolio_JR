@@ -14,6 +14,8 @@ const About = () => {
         <SAboutContainer>
             <SAboutSectionPresentationContainer>
                 <SAboutSectionPresentation>
+                    <p>Photo et texte = dessins à la place de texte
+                        // revoir le texte de toute façon // s'amuser avec animation // react Chrono ?</p>
                     <SAboutPhoto src={jessica_photo} alt="Jessica Rigaud photo smile"/>
                     <SAboutTextContainer>
                         <SAboutTextLeft>
@@ -67,6 +69,7 @@ const About = () => {
                 </SAboutSectionPresentation>
             </SAboutSectionPresentationContainer>
             <SAboutSectionCV>
+                <p>CV</p>
 
             </SAboutSectionCV>
         </SAboutContainer>

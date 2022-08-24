@@ -19,21 +19,11 @@ interface IPortfolioDetail {
 
 const PortfolioDetail = (props: IPortfolioDetail) => {
     const {data} = props;
-    const {openModal, closeModal, modal, setModal} = useModal({StyleModal: SModal});
 
     return (
         <SPortfolioDetailContainer>
             <div key={data[0].id}>
                 <SElementDetailWrapper>
-                    {/*<button onClick={(): void => {*/}
-                    {/*    setModal(*/}
-                    {/*        <TestModal closeModal={closeModal}/>*/}
-                    {/*    )*/}
-                    {/*    openModal();*/}
-                    {/*}}>*/}
-                    {/*    Test*/}
-                    {/*</button>*/}
-                    {/*{modal}*/}
                     <SElementDetailImageInfos>
                         <SElementImageDetail src={data[0].image} alt={"img" + data[0].id}/>
                         <SElementDetailInfos>
