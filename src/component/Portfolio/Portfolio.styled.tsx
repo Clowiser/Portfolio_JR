@@ -5,6 +5,7 @@ import {HashLink} from "react-router-hash-link";
 
 export const SPortfolioContainer = styled.div`
   margin: 2.5rem;
+  color: #262223;
 `;
 
 export const SPortfolioContainerLink = styled.div`
@@ -20,7 +21,16 @@ export const SPortfolioWrapperLink = styled.div`
 `;
 
 export const SPortfolioHashLink = styled(HashLink)`
-  text-decoration: none`;
+  text-decoration: none;
+  color: #262223;
+  text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
+
+  :hover {
+    color: #262223;
+    text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
+    font-weight: bold;
+  }
+`;
 
 export const SPortfolioWrapper = styled.div`
   display: grid;
@@ -60,8 +70,11 @@ export const SSoftwareDevIcons = styled.img`
   width: 3.5rem`;
 
 export const SPortfolioTitle = styled.h2`
+  font-family: 'ChunkFive', Calibri, serif;
+  letter-spacing: 0.2rem;
   text-align: center;
   margin: 1rem;
+  text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
 `;
 
 export const SElementText = styled.div``;

@@ -14,6 +14,7 @@ export const SHeaderTitle = styled.h1`
   letter-spacing: 0.2rem;
   width: 80%;
   color: #262223;
+  text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
 `;
 
 export const SPresentationContainer = styled.div`
@@ -29,11 +30,13 @@ export const SPresentationWrapper = styled.div`
   text-align: justify;
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 `;
 
 export const SPresentationTitle = styled.h1`
   font-family: 'ChunkFive', Calibri, serif;
   letter-spacing: 0.2rem;
+  text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
 `;
 
 export const SPresentationText = styled.div`
@@ -43,12 +46,13 @@ export const SPresentationText = styled.div`
 export const SPresentationLink = styled(Link)`
   //font-family: 'ChunkFive', Calibri, serif;
   //font-size: 2rem;
+  //text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
   margin-top: 1rem;
   text-align: center;
   text-decoration: none;
+
 `;
 
 export const SImg = styled.img`
   width: 100%;
-  margin-bottom: 1rem;
 `;

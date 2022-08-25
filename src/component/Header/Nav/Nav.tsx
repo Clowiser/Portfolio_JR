@@ -22,9 +22,6 @@ const Nav = () => {
                 <SA to="/about">
                     <li>{intl.formatMessage({id: 'about_title'})}</li>
                 </SA>
-                <SA to="/aboutChrono">
-                    <li>TEST</li>
-                </SA>
                 <LocaleFlag/>
             </SUl>
         </SNavContainer>

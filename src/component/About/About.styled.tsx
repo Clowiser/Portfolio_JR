@@ -44,3 +44,8 @@ export const SAboutTextRight = styled.div`
 export const SAboutSectionCV = styled.div`
   text-align: center;`;
 
+export const STitle = styled.h2`
+  font-family: 'ChunkFive', Calibri, serif;
+  font-size: 2rem;
+  text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
+`;

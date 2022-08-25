@@ -7,6 +7,7 @@ export const SRealisationContainer = styled.div`
 export const SRealisationTitle = styled.h2`
   font-family: 'ChunkFive', Calibri, serif;
   letter-spacing: 0.2rem;
+  text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
 `;
 
 export const SRealisationWrapper = styled.div`

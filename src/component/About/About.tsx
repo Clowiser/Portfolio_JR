@@ -5,18 +5,22 @@ import {
     SAboutSectionCV,
     SAboutSectionPresentation, SAboutSectionPresentationContainer, SAboutTextContainer,
     SAboutTextLeft,
-    SAboutTextRight
+    SAboutTextRight, STitle
 } from "./About.styled";
 import jessica_photo from "../../style/assets/img/photo/Jessica Rigaud-min.jpg"
+import Curriculum from "./Curriculum/Curriculum";
+import {useIntl} from "react-intl";
 
 const About = () => {
+    const intl = useIntl();
+
     return (
         <SAboutContainer>
             <SAboutSectionPresentationContainer>
                 <SAboutSectionPresentation>
-                    <p>Photo et texte = dessins à la place de texte
-                        // revoir le texte de toute façon // s'amuser avec animation // react Chrono ?</p>
-                    <SAboutPhoto src={jessica_photo} alt="Jessica Rigaud photo smile"/>
+                    <p>Photo et texte = dessins à la place de texte // s'amuser avec animation // BD</p>
+                    {/*<SAboutPhoto src={jessica_photo} alt="Jessica Rigaud photo smile"/>*/}
+                    <STitle>{intl.formatMessage({id: "about_subtitle_about"})} </STitle>
                     <SAboutTextContainer>
                         <SAboutTextLeft>
                             <p style={{color: "white", padding: "2rem"}}>
@@ -69,11 +73,11 @@ const About = () => {
                 </SAboutSectionPresentation>
             </SAboutSectionPresentationContainer>
             <SAboutSectionCV>
-                <p>CV</p>
+                <STitle>{intl.formatMessage({id: "about_subtitle_way"})} </STitle>
+                <Curriculum/>
 
             </SAboutSectionCV>
         </SAboutContainer>
-
     );
 }
 
