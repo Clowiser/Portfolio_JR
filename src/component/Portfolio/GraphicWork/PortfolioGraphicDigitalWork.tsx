@@ -40,7 +40,7 @@ const PortfolioGraphicDigitalWork = () => {
                 return (
                     <div key={element.id}>
                         <SElementContainer>
-                            <SElementImage src={element.image} alt={"img" + element.id} onClick={(): void => {
+                            <SElementImage src={element.img_complete} alt={"img" + element.id} onClick={(): void => {
                                 setModal(
                                     <PortfolioDetailModal element={element} closeModal={closeModal}/>
                                 )

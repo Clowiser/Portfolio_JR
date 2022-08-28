@@ -15,7 +15,6 @@ const Router: React.FC = () => {
             <Route path="/portfolio/:id" element={<PortfolioDetailPage/>}/>
 
             <Route path="/about" element={<About/>}/>
-
         </Routes>
     );
 

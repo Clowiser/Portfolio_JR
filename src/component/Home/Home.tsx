@@ -2,16 +2,14 @@ import React from "react";
 import {
     SHeaderContainer,
     SHeaderTitle, SHeaderWrapper, SHomeContainer, SImg,
-    SPresentationContainer, SPresentationLink,
+    SPresentationContainer,
     SPresentationText,
-    SPresentationTitle, SPresentationWrapper
+    SPresentationTitle, SPresentationWrapper, SRealisationComponent, SSkillsComponent
 } from "./Home.styled";
-import BannerAnimation from "../BannerAnimation/BannerAnimation";
 import {useIntl} from "react-intl";
 import Realisation from "./Realisations/Realisation";
 import Skills from "../Skills/Skills";
-import avatar from "../../style/assets/img/banner/Avatardev.png"
-import LogoPage from "./LogoPage/LogoPage";
+import avatar from "../../style/assets/img/banner/Avatar_dev.png"
 
 const Home = () => {
     const intl = useIntl();
@@ -34,9 +32,13 @@ const Home = () => {
                 </SPresentationWrapper>
             </SPresentationContainer>
 
-            <Skills/>
+            <SSkillsComponent>
+                <Skills/>
+            </SSkillsComponent>
 
-            <Realisation/>
+            <SRealisationComponent>
+                <Realisation/>
+            </SRealisationComponent>
         </SHomeContainer>
     );
 }

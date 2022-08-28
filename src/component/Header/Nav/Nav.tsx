@@ -7,6 +7,11 @@ import {useIntl} from "react-intl";
 const Nav = () => {
     const intl = useIntl();
 
+    const isActiveStyle = {
+        textDecoration: 'none',
+        color: 'red'
+    };
+
     return (
         <SNavContainer>
             <SUl>

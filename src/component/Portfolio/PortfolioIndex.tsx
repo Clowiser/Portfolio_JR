@@ -28,7 +28,6 @@ const PortfolioIndex = (): JSX.Element => {
                 <SPortfolioHashLink smooth
                                     to={`/portfolio#graphics`}><SImgDraw src={right}
                                                                          alt="Personnage JR dessinant"/></SPortfolioHashLink>
-
             </SPortfolioWrapperLink>
 
             <SPortfolioSection>

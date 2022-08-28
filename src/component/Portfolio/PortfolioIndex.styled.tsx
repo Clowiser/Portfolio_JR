@@ -5,16 +5,15 @@ import {HashLink} from "react-router-hash-link";
 
 export const SPortfolioContainer = styled.div`
   margin: 3rem;
-  color: #262223;
+  color: ${props => props.theme.primaryColor};
 `;
 
 //Link
 export const SPortfolioWrapperLink = styled.div`
-  margin: 6rem;
+  margin: 6rem auto;
   display: flex;
   justify-content: center;
 `;
-
 
 export const SImgDraw = styled.img`
   border-radius: 1rem;
@@ -76,8 +75,8 @@ export const SSoftwareDevIcons = styled.img`
   left: -17rem;
   width: 3.5rem`;
 
-export const SPortfolioTitle = styled.h2`
-  font-family: 'ChunkFive', Calibri, serif;
+export const SPortfolioTitle = styled.h1`
+  font-family: ${props => props.theme.fontFamily};
   letter-spacing: 0.2rem;
   text-align: center;
   margin: 1rem;

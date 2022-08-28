@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 export const SNavContainer = styled.nav`
-  background-color: #efefef;
-  padding: 1rem 0;
+  //background-color: #efefef;
+  padding: 2rem 0;
 `;
 
 export const SUl = styled.div`
@@ -26,31 +26,34 @@ export const SJRLogo = styled.img`
   width: 15%;
   transform: scale(1);
 
-  animation: floater 4s infinite;
-  @keyframes floater {
+  animation: pulsate-bck 2s ease-in-out infinite both;
+
+  @keyframes pulsate-bck {
     0% {
-      transform: translateY(-5%);
-      transition: ease 0.5s;
+      transform: scale(1);
     }
     50% {
-      transform: translateY(5%);
-      transition: ease 0.5s;
+      transform: scale(0.9);
     }
     100% {
-      transform: translateY(-5%);
-      transition: ease 0.5s;
+      transform: scale(1);
     }
+  }
+
 `;
 
-export const SA = styled(Link)`
+export const SA = styled(NavLink)`
   text-decoration: none;
-  color: #262223;
+  color: ${props => props.theme.primaryColor};
   text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
   margin-left: 1em;
   transform: scale(1);
 
-  :hover {
+  &.active {
+    font-weight: bold;
+  }
 
+  :hover {
     transform: scale(1.1);
   }
 `;

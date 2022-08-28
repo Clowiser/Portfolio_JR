@@ -18,7 +18,6 @@ const About = () => {
         <SAboutContainer>
             <SAboutSectionPresentationContainer>
                 <SAboutSectionPresentation>
-                    <p>Photo et texte = dessins à la place de texte // s'amuser avec animation // BD</p>
                     {/*<SAboutPhoto src={jessica_photo} alt="Jessica Rigaud photo smile"/>*/}
                     <STitle>{intl.formatMessage({id: "about_subtitle_about"})} </STitle>
                     <SAboutTextContainer>
@@ -72,10 +71,10 @@ const About = () => {
                     </SAboutTextContainer>
                 </SAboutSectionPresentation>
             </SAboutSectionPresentationContainer>
+
             <SAboutSectionCV>
                 <STitle>{intl.formatMessage({id: "about_subtitle_way"})} </STitle>
-                <Curriculum/>
-
+                {/*<Curriculum/>*/}
             </SAboutSectionCV>
         </SAboutContainer>
     );

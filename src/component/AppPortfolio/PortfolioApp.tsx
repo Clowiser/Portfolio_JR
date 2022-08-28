@@ -3,7 +3,7 @@ import Footer from "../Footer/Footer";
 import Router from "../Router/Router";
 import React from "react";
 
-const PortfolioContainer = () => {
+const PortfolioApp = () => {
 
     return (
         <>
@@ -12,4 +12,4 @@ const PortfolioContainer = () => {
             <Footer/>
         </>);
 }
-export default PortfolioContainer;
+export default PortfolioApp;

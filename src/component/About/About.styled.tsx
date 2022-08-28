@@ -1,21 +1,18 @@
 import styled from "styled-components";
 
 export const SAboutContainer = styled.div`
-  margin: 1rem`;
+  margin: 1em`;
 
-export const SAboutSectionPresentationContainer = styled.div`
-  display: inline-block;
-  justify-content: center;
-`;
+export const SAboutSectionPresentationContainer = styled.div``;
 
 export const SAboutSectionPresentation = styled.div`
   text-align: center;
-  margin: 0 3rem;
+  margin: 0 3em;
 `;
 
 export const SAboutPhoto = styled.img`
   width: 20%;
-  border-radius: 1rem;
+  border-radius: 1em;
 `;
 
 export const SAboutTextContainer = styled.div`
@@ -27,25 +24,25 @@ export const SAboutTextContainer = styled.div`
 export const SAboutTextLeft = styled.div`
   width: 80%;
   background-color: #262223;
-  border-radius: 1rem;
-  margin: 1rem 0;
+  border-radius: 1em;
+  margin: 1em 0;
   position: relative;
-  left: -8rem;
+  left: -8em;
 `;
 
 export const SAboutTextRight = styled.div`
   width: 80%;
   background-color: #efefef;
-  border-radius: 1rem;
+  border-radius: 1em;
   position: relative;
-  right: -8rem;
+  right: -8em;
 `;
 
 export const SAboutSectionCV = styled.div`
-  text-align: center;`;
+  text-align: center;
+`;
 
-export const STitle = styled.h2`
-  font-family: 'ChunkFive', Calibri, serif;
-  font-size: 2rem;
+export const STitle = styled.h1`
+  font-family: ${props => props.theme.fontFamily};
   text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
 `;

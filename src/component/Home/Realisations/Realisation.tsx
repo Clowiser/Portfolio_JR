@@ -4,7 +4,7 @@ import {
     SRealisationContainer,
     SRealisationElementList,
     SRealisationTitle,
-    SRealisationElementWrapper, SCircleImgWrapper
+    SRealisationElementWrapper, SCircleImgWrapper, SCircleText
 } from "./Realisation.styled";
 import {useIntl} from "react-intl";
 import React, {useEffect, useState} from "react";
@@ -50,23 +50,19 @@ const Realisation = () => {
                     return (
                         <SRealisationElementWrapper key={element.id}>
                             <SRealisationElementList>
-
                                 <SCircleImgWrapper>
                                     <SCircleImg src={element.image} alt="img" onClick={() => {
                                         setModal(<RealisationModal closeModal={closeModal} element={element}/>)
                                         openModal();
                                     }}/>
-                                    {modal}
+                                    {/*<SCircleText>{element.title}</SCircleText>*/}
                                 </SCircleImgWrapper>
-                                
-                                <SListUnique>
-                                    <p>{element.title}</p>
-                                </SListUnique>
                             </SRealisationElementList>
                         </SRealisationElementWrapper>
                     )
                 })}
             </SRealisationElementContainer>
+            {modal}
         </SRealisationContainer>
     )
 }
