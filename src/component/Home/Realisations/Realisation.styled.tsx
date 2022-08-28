@@ -10,17 +10,17 @@ export const SRealisationTitle = styled.h2`
   text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
 `;
 
-export const SRealisationWrapper = styled.div`
+export const SRealisationElementWrapper = styled.div`
   display: inline-block;
 `;
 
-export const SRealContainer = styled.div`
+export const SRealisationElementContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 0;
 `;
 
-export const SRealisationList = styled.div`
+export const SRealisationElementList = styled.div`
   display: flex;
   flex-direction: column;
   width: 20rem;
@@ -32,10 +32,12 @@ export const SListUnique = styled.div`
   margin-top: 1rem;
 `;
 
+export const SCircleImgWrapper = styled.div``;
+
 export const SCircleImg = styled.img`
   width: 70%;
   margin: auto;
-  filter: drop-shadow(10px 4px 6px #c9c7c7);
+  clip-path: ellipse(50% 50%);
   transform: scale(1);
   cursor: pointer;
 

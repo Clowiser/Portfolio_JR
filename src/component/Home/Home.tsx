@@ -1,7 +1,7 @@
 import React from "react";
 import {
     SHeaderContainer,
-    SHeaderTitle, SImg,
+    SHeaderTitle, SHeaderWrapper, SHomeContainer, SImg,
     SPresentationContainer, SPresentationLink,
     SPresentationText,
     SPresentationTitle, SPresentationWrapper
@@ -17,22 +17,27 @@ const Home = () => {
     const intl = useIntl();
 
     return (
-        <>
+        <SHomeContainer>
             <SHeaderContainer>
-                <SHeaderTitle>
-                    {intl.formatMessage({id: 'home_header_title'})}
-                </SHeaderTitle>
+                <SHeaderWrapper>
+                    <SHeaderTitle>
+                        {intl.formatMessage({id: 'home_header_title'})}
+                    </SHeaderTitle>
+                </SHeaderWrapper>
+                <SImg src={avatar} alt="logo JR"/>
             </SHeaderContainer>
-            <SImg src={avatar} alt="logo JR"/>
+
             <SPresentationContainer>
                 <SPresentationWrapper>
                     <SPresentationTitle>{intl.formatMessage({id: 'home_welcome_message'})}</SPresentationTitle>
                     <SPresentationText>{intl.formatMessage({id: 'home_reconversion_text'})}</SPresentationText>
                 </SPresentationWrapper>
             </SPresentationContainer>
+
             <Skills/>
+
             <Realisation/>
-        </>
+        </SHomeContainer>
     );
 }
 

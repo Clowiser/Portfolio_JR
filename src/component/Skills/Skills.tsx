@@ -9,7 +9,7 @@ import {
 import {useIntl} from "react-intl";
 import left from "../../style/assets/img/img/left.png"
 import right from "../../style/assets/img/img/right.png"
-import {SPortfolioHashLink} from "../Portfolio/Portfolio.styled";
+import {SPortfolioHashLink} from "../Portfolio/PortfolioIndex.styled";
 import React from "react";
 
 const Skills = () => {

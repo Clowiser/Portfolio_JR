@@ -1,20 +1,25 @@
 import {
     SCircleImg, SListUnique,
-    SRealContainer,
+    SRealisationElementContainer,
     SRealisationContainer,
-    SRealisationList,
+    SRealisationElementList,
     SRealisationTitle,
-    SRealisationWrapper
+    SRealisationElementWrapper, SCircleImgWrapper
 } from "./Realisation.styled";
 import {useIntl} from "react-intl";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import useModal from "../../utils/Hooks/useModal";
+import {SModal} from "../../utils/Modal/Modal.styled";
+import RealisationModal from "../Modal/RealisationModal";
 
 const Realisation = () => {
     const intl = useIntl();
     const [data, setData] = useState<any[]>([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false)
+
+    const {openModal, closeModal, modal, setModal} = useModal({StyleModal: SModal});
 
     useEffect(() => {
         setLoading(true)
@@ -39,23 +44,29 @@ const Realisation = () => {
     return (
         <SRealisationContainer>
             <SRealisationTitle>{intl.formatMessage({id: 'realisation_title'})}</SRealisationTitle>
-            <SRealContainer>
+
+            <SRealisationElementContainer>
                 {data.map((element) => {
                     return (
-                        <SRealisationWrapper key={element.id}>
-                            <SRealisationList>
-                                <SCircleImg src={element.img} alt="img"/>
+                        <SRealisationElementWrapper key={element.id}>
+                            <SRealisationElementList>
+
+                                <SCircleImgWrapper>
+                                    <SCircleImg src={element.image} alt="img" onClick={() => {
+                                        setModal(<RealisationModal closeModal={closeModal} element={element}/>)
+                                        openModal();
+                                    }}/>
+                                    {modal}
+                                </SCircleImgWrapper>
+                                
                                 <SListUnique>
                                     <p>{element.title}</p>
-                                    <p>{element.project}</p>
-                                    <p>{element.tools}</p>
-                                    <p>{element.demand}</p>
                                 </SListUnique>
-                            </SRealisationList>
-                        </SRealisationWrapper>
+                            </SRealisationElementList>
+                        </SRealisationElementWrapper>
                     )
                 })}
-            </SRealContainer>
+            </SRealisationElementContainer>
         </SRealisationContainer>
     )
 }

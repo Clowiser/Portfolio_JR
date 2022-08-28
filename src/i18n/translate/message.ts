@@ -58,7 +58,7 @@ export const message = {
         home_title: "Accueil",
         home_header_title: "Développeuse Frontend Junior & Exploratrice de l'Imaginaire",
         home_welcome_message: "Bonjour Monde !",
-        home_reconversion_text: "Artiste en herbe connectée et Apprentie développeuse frontend, je vous souhaite la bienvenue ! En pleine reconversion dans l'univers de l'informatique en tant que Développeuse Front-End, je souhaite mettre mes compétences créatives et mon savoir-faire technique au service des utilisateurs et des entreprises !",
+        home_reconversion_text: "Artiste en herbe connectée et Apprentie développeuse frontend, je vous souhaite la bienvenue ! En pleine reconversion dans l'univers de l'informatique, je transmets mes compétences, mon savoir-faire et mon envie d'évoluer au service des utilisateurs et des entreprises !",
         home_find_creation: "Veuillez retrouver l'ensemble de mes créations dans mon portfolio !",
         realisation_title: "Ils m'ont fait confiance !",
         skill_title_imaginary: "Exploratrice de l'Imaginaire",

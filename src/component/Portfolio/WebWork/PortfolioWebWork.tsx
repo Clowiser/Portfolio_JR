@@ -4,7 +4,7 @@ import {
     SElementContainer,
     SElementImage, SElementText, SPortfolioDetailsLink,
     SPortfolioWrapper, SSoftwareDevIcons, SSoftwareDevIconsContainer,
-} from "../Portfolio.styled";
+} from "../PortfolioIndex.styled";
 import {useIntl} from "react-intl";
 
 

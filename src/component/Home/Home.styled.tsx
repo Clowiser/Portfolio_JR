@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
+export const SHomeContainer = styled.div``;
 
-export const SHeaderContainer = styled.div`
+export const SHeaderWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 2rem;`
+;
+
+export const SHeaderContainer = styled.div`
+
 `;
 
 export const SHeaderTitle = styled.h1`

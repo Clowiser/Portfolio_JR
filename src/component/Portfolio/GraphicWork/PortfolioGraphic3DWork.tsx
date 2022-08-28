@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 import useModal from "../../utils/Hooks/useModal";
 import {SModal} from "../../utils/Modal/Modal.styled";
 import axios from "axios";
-import {SElementContainer, SElementImage, SElementText, SPortfolioWrapper} from "../Portfolio.styled";
+import {SElementContainer, SElementImage, SElementText, SPortfolioWrapper} from "../PortfolioIndex.styled";
 import PortfolioDetailModal from "../WebWork/PortfolioWebWorkDetailModal";
 
 const PortfolioGraphic3DWork = () => {
