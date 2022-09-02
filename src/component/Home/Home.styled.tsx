@@ -43,6 +43,21 @@ export const SPresentationText = styled.div`
 
 export const SImg = styled.img`
   width: 100%;
+
+  animation: floating 6s ease-in-out infinite;
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+
 `;
 
 export const SSkillsComponent = styled.div``;

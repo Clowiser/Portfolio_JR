@@ -1,65 +1,58 @@
-import React from "react"
-import {Chrono} from "react-chrono";
-import {TimelineItemModel} from "react-chrono/dist/models/TimelineItemModel";
-import jessica_photo from "../../../style/assets/img/photo/Jessica Rigaud-min.jpg"
+import React from "react";
+import {
+    SCurriculumContainer,
+    SFormationsWrapper,
+    SFormationsSections,
+    SImgCode,
+    SFormationsContainer, SWebSkillsContainer
+} from "./Curriculum.styled";
+import left from "../../../style/assets/img/img/left.png";
 
 const Curriculum = (): JSX.Element => {
-    const items = [{
-        title: "Qui suis-je ?",
-        cardSubtitle: "",
-        media: {
-            type: "IMAGE",
-            source: {
-                url: `${jessica_photo}`
-            }
-        }
-    },
-        {
-            title: "Qu'ai-je fais ?",
-            cardSubtitle: "Men of the British Expeditionary Force (BEF) wade out to..",
-            cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-            media: {
-                type: "IMAGE",
-                source: {
-                    url: ``
-                }
-            }
-        },
-        {
-            title: "Ou vais-je ?",
-            cardSubtitle: "Men of the British Expeditionary Force (BEF) wade out to..",
-            cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-            media: {
-                type: "IMAGE",
-                source: {
-                    url: ``
-                }
-            }
-        },
-        {
-            title: "TEXTE ?",
-            cardSubtitle: "Men of the British Expeditionary Force (BEF) wade out to..",
-            cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-            media: {
-                type: "IMAGE",
-                source: {
-                    url: ``
-                }
-            }
-        }] as TimelineItemModel[];
 
     return (
-        <div style={{width: "100%", height: "auto"}}>
-            <Chrono items={items} mode="VERTICAL_ALTERNATING"
-                    theme={{
-                        primary: '#262223',
-                        secondary: 'white',
-                        titleColor: '#262223',
-                        titleColorActive: 'grey',
-                    }}
-                    hideControls
-            />
-        </div>
+        <SCurriculumContainer>
+            <SWebSkillsContainer>
+                <h2>Mes Compétences Professionnelles</h2>
+                <p>FR</p>
+                <p>EN</p>
+            </SWebSkillsContainer>
+
+            <SWebSkillsContainer>
+                <h2>Mes Web Skills</h2>
+                <p>Mettre logo + barre d'évolution</p>
+            </SWebSkillsContainer>
+
+            <SWebSkillsContainer>
+                <h2>Mes Expériences professionnelles</h2>
+                <p>répétition de la BD</p>
+            </SWebSkillsContainer>
+
+            <SFormationsContainer>
+                <h2>Mes formations</h2>
+                <p>faire une illustration de chaque sections + mettre logo des écoles derrière</p>
+                <SFormationsWrapper>
+                    <SFormationsSections>
+                        <h3>Développement Web :</h3>
+                        <SImgCode src={left} alt="Personnage JR développeuse"/>
+                    </SFormationsSections>
+                    <SFormationsSections>
+                        <h3>Arts & Créations :</h3>
+                        <SImgCode src={left} alt="Personnage JR développeuse"/>
+                    </SFormationsSections>
+                    <SFormationsSections>
+                        <h3>Hôtellerie-Restauration :</h3>
+                        <SImgCode src={left} alt="Personnage JR développeuse"/>
+                    </SFormationsSections>
+                </SFormationsWrapper>
+            </SFormationsContainer>
+
+            <SWebSkillsContainer>
+                <h2>Mes Centres d'intérêts</h2>
+                <p>Mettre logo + barre d'évolution</p>
+            </SWebSkillsContainer>
+
+        </SCurriculumContainer>
     )
 
 }

@@ -7,8 +7,8 @@ import {IntlProvider} from "react-intl";
 import FontsStyle from "./fonts/FontsStyle";
 import {ThemeProvider} from "styled-components";
 import theme from "./style/theme/Theme";
-import ScrollButton from "./component/utils/Scroll/ScrollButton.styled";
-import {Content} from "./component/utils/Scroll/ScrollButton";
+import ScrollButton from "./component/utils/Scroll/ScrollButton";
+import {Content} from "./component/utils/Scroll/ScrollButton.styled";
 
 export const languageContext = createContext({});
 
@@ -18,7 +18,7 @@ const App = () => {
     const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>): void => {
         setInitLocal(event.target.value);
     };
-    
+
     return (
         <BrowserRouter>
             <IntlProvider locale={initLocal} defaultLocale={locales.fr} messages={message[initLocal]}

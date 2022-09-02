@@ -20,9 +20,7 @@ const Skills = () => {
 
             <SImgCode src={left} alt="Personnage JR développeuse"/>
             <SSkillsCodeText>
-                {/*<h2>{intl.formatMessage({id: 'skill_title_developer'})}</h2>*/}
                 <p>{intl.formatMessage({id: 'skill_subtitle_developer'})}</p>
-                {/*<p>{intl.formatMessage({id: 'skill_title_list_developer'})}</p>*/}
                 <p>Mes appétences dans le développement</p>
                 <SSkillsList style={{marginBottom: "5rem"}}>
                     <li>{intl.formatMessage({id: 'skill_title_html_css_developer'})}</li>

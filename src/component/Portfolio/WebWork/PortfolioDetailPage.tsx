@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {useParams} from "react-router-dom";
 import {useIntl} from "react-intl";
-import PortfolioDetail from "./PortfolioDetail";
+import PortfolioDetail from "../../ unguarded/PortfolioDetail";
 
 const PortfolioDetailPage = () => {
     const intl = useIntl();

@@ -23,7 +23,21 @@ export const SSkillsWrapper = styled.div`
 export const SSkillsList = styled.li`
   list-style: none`;
 
-export const SImgCode = styled.img``;
+export const SImgCode = styled.img`
+
+  animation: pulsate-bck 4s ease-in-out infinite both;
+
+  @keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }`;
 
 export const SSkillsCodeText = styled(SSkillsWrapper)`
   background-color: whitesmoke;
@@ -33,4 +47,18 @@ export const SSkillsDrawText = styled(SSkillsWrapper)`
   background-color: whitesmoke;
 `;
 
-export const SImgDraw = styled.img``;
+export const SImgDraw = styled.img`
+
+  animation: pulsate-bck 4s ease-in-out infinite both;
+
+  @keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }`;

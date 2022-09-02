@@ -1,38 +1,19 @@
-import React, {useState} from 'react';
-import {SButton} from "./ScrollButton";
-// @ts-ignore
-import {FaArrowCircleUp} from 'react-icons/fa';
+import styled from 'styled-components';
 
-const ScrollButton = () => {
+export const Content = styled.div`
+  overflowY: scroll;
+`;
 
-    const [visible, setVisible] = useState(false)
+export const SButton = styled.div`
+  position: fixed;
+  right: 0.5em;
+  bottom: 1em;
+  height: 0.5em;
+  font-size: 2.5rem;
+  z-index: 1;
+  cursor: pointer;
+  filter: drop-shadow(-0.033em 0 1px rgba(255, 0, 0, 0.67))
+`;
 
-    const toggleVisible = () => {
-        const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300) {
-            setVisible(true)
-        } else if (scrolled <= 300) {
-            setVisible(false)
-        }
-    };
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-            /* you can also use 'auto' behaviour
-               in place of 'smooth' */
-        });
-    };
-
-    window.addEventListener('scroll', toggleVisible);
-
-    return (
-        <SButton>
-            <FaArrowCircleUp onClick={scrollToTop}
-                             style={{display: visible ? 'inline' : 'none', textShadow: "10px 10px 10px blue"}}/>
-        </SButton>
-    );
-}
-
-export default ScrollButton;
+export const SShadowIcon = styled.div`
+  filter: drop-shadow(0.033em 0 1px rgba(0, 255, 255, 0.67))`;

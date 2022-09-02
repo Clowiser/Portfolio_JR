@@ -2,7 +2,7 @@ import {Route, Routes} from "react-router-dom";
 import About from "../About/About";
 import React from "react";
 import Home from "../Home/Home";
-import PortfolioDetailPage from "../ unguarded/PortfolioDetailPage";
+import PortfolioDetailPage from "../Portfolio/WebWork/PortfolioDetailPage";
 import PortfolioIndex from "../Portfolio/PortfolioIndex";
 
 const Router: React.FC = () => {

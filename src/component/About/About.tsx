@@ -8,8 +8,10 @@ import {
     SAboutTextRight, STitle
 } from "./About.styled";
 import jessica_photo from "../../style/assets/img/photo/Jessica Rigaud-min.jpg"
-import Curriculum from "./Curriculum/Curriculum";
+import CurriculumReact from "../ unguarded/CurriculumReact";
 import {useIntl} from "react-intl";
+import {useLocation} from "react-router-dom";
+import Curriculum from "./Curriculum/Curriculum";
 
 const About = () => {
     const intl = useIntl();
@@ -74,7 +76,7 @@ const About = () => {
 
             <SAboutSectionCV>
                 <STitle>{intl.formatMessage({id: "about_subtitle_way"})} </STitle>
-                {/*<Curriculum/>*/}
+                <Curriculum/>
             </SAboutSectionCV>
         </SAboutContainer>
     );

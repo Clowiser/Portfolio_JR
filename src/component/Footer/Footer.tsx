@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {useIntl} from "react-intl";
 import Counter from "../counter/Counter";
 import {
@@ -12,8 +12,10 @@ import logo_Github from "../../style/assets/img/logo/github_logo.png";
 import logo_Linkedin from "../../style/assets/img/logo/linkedin_logo.png";
 import logo_Gmail from "../../style/assets/img/logo/gmail_logo.png";
 
+
 const Footer = () => {
     const intl = useIntl();
+
     return (
         <SFooterContainer>
             <SMottoNetworkWrapper>
