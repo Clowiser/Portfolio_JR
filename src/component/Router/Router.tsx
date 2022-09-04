@@ -4,6 +4,7 @@ import React from "react";
 import Home from "../Home/Home";
 import PortfolioDetailPage from "../Portfolio/WebWork/PortfolioDetailPage";
 import PortfolioIndex from "../Portfolio/PortfolioIndex";
+import Contact from "../Contact/Contact";
 
 const Router: React.FC = () => {
 
@@ -15,7 +16,10 @@ const Router: React.FC = () => {
             <Route path="/portfolio/:id" element={<PortfolioDetailPage/>}/>
 
             <Route path="/about" element={<About/>}/>
+
+            <Route path="/contact" element={<Contact/>}/>
         </Routes>
+
     );
 
 }

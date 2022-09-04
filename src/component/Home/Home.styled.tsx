@@ -7,7 +7,12 @@ export const SHeaderWrapper = styled.div`
   justify-content: center;
 `;
 
-export const SHeaderContainer = styled.div``;
+export const SHeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+`;
 
 export const SHeaderTitle = styled.h1`
   font-family: ${props => props.theme.fontFamily};
@@ -42,8 +47,7 @@ export const SPresentationText = styled.div`
 `;
 
 export const SImg = styled.img`
-  width: 100%;
-
+  width: 45%;
   animation: floating 6s ease-in-out infinite;
 
   @keyframes floating {

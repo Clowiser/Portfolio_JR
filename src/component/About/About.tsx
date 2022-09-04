@@ -1,16 +1,12 @@
 import React from "react";
 import {
     SAboutContainer,
-    SAboutPhoto,
     SAboutSectionCV,
     SAboutSectionPresentation, SAboutSectionPresentationContainer, SAboutTextContainer,
     SAboutTextLeft,
     SAboutTextRight, STitle
 } from "./About.styled";
-import jessica_photo from "../../style/assets/img/photo/Jessica Rigaud-min.jpg"
-import CurriculumReact from "../ unguarded/CurriculumReact";
 import {useIntl} from "react-intl";
-import {useLocation} from "react-router-dom";
 import Curriculum from "./Curriculum/Curriculum";
 
 const About = () => {
@@ -20,7 +16,6 @@ const About = () => {
         <SAboutContainer>
             <SAboutSectionPresentationContainer>
                 <SAboutSectionPresentation>
-                    {/*<SAboutPhoto src={jessica_photo} alt="Jessica Rigaud photo smile"/>*/}
                     <STitle>{intl.formatMessage({id: "about_subtitle_about"})} </STitle>
                     <SAboutTextContainer>
                         <SAboutTextLeft>

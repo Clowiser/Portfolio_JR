@@ -46,6 +46,9 @@ export const message = {
         about_presentation: "",
         about_subtitle_about: "About me!",
         about_subtitle_way: "My way",
+        //Contact
+        contact_title: "Contact",
+        form_submit: "Send",
         //Footer
         Footer_copyright: "Copyright by me 2022",
         Footer_Motto: "Fulfill yourself, keep learning and level up",
@@ -91,6 +94,9 @@ export const message = {
         about_subtitle_about: "A propos de moi !",
         about_subtitle_way: "Mon parcours",
         about_presentation: "",
+        //Contact
+        contact_title: "Contact",
+        form_submit: "Envoyer",
         //Footer
         Footer_copyright: "Copyright Jessica Rigaud 2022",
         Footer_Motto: "Se réaliser, continuer d'apprendre et passer au niveau supérieur",

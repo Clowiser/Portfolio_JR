@@ -3,7 +3,7 @@ import {Link, NavLink} from "react-router-dom";
 
 export const SNavContainer = styled.nav`
   //background-color: #efefef;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 `;
 
 export const SUl = styled.div`
@@ -26,7 +26,7 @@ export const SJRLogo = styled.img`
   width: 15%;
   transform: scale(1);
 
-  animation: pulsate-bck 2s ease-in-out infinite both;
+  animation: pulsate-bck 3s ease-in-out infinite both;
 
   @keyframes pulsate-bck {
     0% {

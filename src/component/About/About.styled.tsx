@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const SAboutContainer = styled.div`
-  margin: 1em`;
+  margin: 1em;
+`;
 
 export const SAboutSectionPresentationContainer = styled.div``;
 

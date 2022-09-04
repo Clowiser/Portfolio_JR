@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SFooterContainer = styled.div`
-  background-color: ${props => props.theme.primaryColor};
+  background-color: ${props => props.theme.fourthColor};
   color: ${props => props.theme.secondaryColor};
   display: flex;
   justify-content: center;

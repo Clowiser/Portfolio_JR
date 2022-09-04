@@ -9,7 +9,7 @@ import {
 import {useIntl} from "react-intl";
 import Realisation from "./Realisations/Realisation";
 import Skills from "../Skills/Skills";
-import avatar from "../../style/assets/img/banner/Avatar_dev.png"
+import avatar from "../../style/assets/img/banner/Avatar_dev_RB-min.png"
 
 const Home = () => {
     const intl = useIntl();
