@@ -2,9 +2,9 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {useParams} from "react-router-dom";
 import {useIntl} from "react-intl";
-import PortfolioDetail from "../../ unguarded/PortfolioDetail";
+import PortfolioDetail from "../../Detail/PortfolioDetail";
 
-const PortfolioDetailPage = () => {
+const PortfolioDetailData = () => {
     const intl = useIntl();
     const {id} = useParams();
     const [data, setData] = useState(null);
@@ -14,7 +14,7 @@ const PortfolioDetailPage = () => {
     useEffect(() => {
         const fetchArticle = () => {
             setLoading(true)
-            axios.get(`http://localhost:3000/api/portfolio_web_realisations/${id}`)
+            axios.get(`http://localhost:3000/api/portfolio_graphic_3d/${id}`)
                 .then(res => {
                     setData(res.data)
                     setLoading(false);
@@ -23,6 +23,7 @@ const PortfolioDetailPage = () => {
                     setError(error);
                 })
         };
+
         fetchArticle();
     }, [id]);
 
@@ -35,10 +36,9 @@ const PortfolioDetailPage = () => {
 
     return (
         <>
-            {data && <PortfolioDetail data={data}/>}
+            {data && <PortfolioDetail data={data} id={id}/>}
         </>
     )
-
 }
 
-export default PortfolioDetailPage;
+export default PortfolioDetailData;

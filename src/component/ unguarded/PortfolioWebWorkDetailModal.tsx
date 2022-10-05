@@ -10,38 +10,40 @@ import logo_Netlify from "../../style/assets/img/logo/netlify_logo.png";
 import logo_Figma from "../../style/assets/img/logo/figma_logo.png";
 import useModal from "../utils/Hooks/useModal";
 import {SModal} from "../utils/Modal/Modal.styled";
+import TestModal from "./TestModal";
+import {log} from "util";
 
-import PortfolioDetailModal from "../Portfolio/WebWork/PortfolioWebWorkDetailModal";
-
-interface IPortfolioDetail {
-    data: any;
+interface IPortfolioDetailModal {
+    closeModal: () => void;
+    element: any;
 }
 
-const PortfolioDetail = (props: IPortfolioDetail) => {
-    const {data} = props;
+const PortfolioDetail = (props: IPortfolioDetailModal) => {
+    const {closeModal, element} = props;
 
     return (
         <SPortfolioDetailContainer>
-            <div key={data[0].id}>
+            <div key={element.id}>
                 <SElementDetailWrapper>
                     <SElementDetailImageInfos>
-                        <SElementImageDetail src={data[0].image} alt={"img" + data[0].id}/>
+                        <SElementImageDetail src={element.image} alt={"img" + element.id}/>
                         <SElementDetailInfos>
-                            <p>{data[0].title}</p>
-                            <p>{data[0].subtitle}</p>
-                            <p>{data[0].description}</p>
+                            <p>{element.title}</p>
+                            <p>{element.subtitle}</p>
+                            <p>{element.description}</p>
                             <SShareLogoContainer>
-                                {data[0].github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}
-                                {data[0].netifly_boolean === "true" ? <SShareLogo src={logo_Netlify}/> : null}
-                                {data[0].figma_boolean === "true" ? <SShareLogo src={logo_Figma}/> : null}
+                                {element.github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}
+                                {element.netifly_boolean === "true" ? <SShareLogo src={logo_Netlify}/> : null}
+                                {element.figma_boolean === "true" ? <SShareLogo src={logo_Figma}/> : null}
                             </SShareLogoContainer>
                         </SElementDetailInfos>
                     </SElementDetailImageInfos>
-
                 </SElementDetailWrapper>
             </div>
+            <div onClick={(): void => {
+                closeModal()
+            }}/>
         </SPortfolioDetailContainer>)
-
 }
 
 export default PortfolioDetail;

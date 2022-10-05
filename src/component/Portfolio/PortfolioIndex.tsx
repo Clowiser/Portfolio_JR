@@ -7,8 +7,8 @@ import {
 import React from "react";
 import {useIntl} from "react-intl";
 import PortfolioWebWork from "./WebWork/PortfolioWebWork";
-import PortfolioGraphicDigitalWork from "./GraphicWork/PortfolioGraphicDigitalWork";
-import PortfolioGraphic3DWork from "./GraphicWork/PortfolioGraphic3DWork";
+import PortfolioGraphicDigitalWork from "./GraphicWork/Digital/PortfolioGraphicDigitalWork";
+import PortfolioGraphic3DWork from "./GraphicWork/3D/PortfolioGraphic3DWork";
 // @ts-ignore
 import {HashLink} from 'react-router-hash-link';
 import left from "../../style/assets/img/img/Bannerleft.png";

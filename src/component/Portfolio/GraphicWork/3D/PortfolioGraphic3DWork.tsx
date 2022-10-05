@@ -1,7 +1,5 @@
 import {useIntl} from "react-intl";
 import React, {useEffect, useState} from "react";
-import useModal from "../../utils/Hooks/useModal";
-import {SModal} from "../../utils/Modal/Modal.styled";
 import axios from "axios";
 import {
     SElementContainer,
@@ -9,16 +7,13 @@ import {
     SElementText,
     SPortfolioDetailsLink,
     SPortfolioWrapper
-} from "../PortfolioIndex.styled";
-import PortfolioDetailModal from "../WebWork/PortfolioWebWorkDetailModal";
+} from "../../PortfolioIndex.styled";
 
 const PortfolioGraphic3DWork = () => {
     const intl = useIntl();
     const [data, setData] = useState<any[]>([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false)
-
-    const {openModal, closeModal, modal, setModal} = useModal({StyleModal: SModal});
 
     useEffect(() => {
         setLoading(true)
@@ -33,7 +28,6 @@ const PortfolioGraphic3DWork = () => {
             })
     }, []);
 
-
     if (error) {
         return <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
     }
@@ -47,16 +41,9 @@ const PortfolioGraphic3DWork = () => {
                 return (
                     <div key={element.id}>
                         <SElementContainer>
-                            <SPortfolioDetailsLink to={`/portfolio/${element.id}`}>
+                            <SPortfolioDetailsLink to={`/portfolio/3D/${element.id}`}>
                                 <SElementImage src={element.image} alt={"img" + element.id}/>
                             </SPortfolioDetailsLink>
-                            {/*<SElementImage src={element.image} alt={"img" + element.id} onClick={(): void => {*/}
-                            {/*    setModal(*/}
-                            {/*        <PortfolioDetailModal element={element} closeModal={closeModal}/>*/}
-                            {/*    )*/}
-                            {/*    openModal();*/}
-                            {/*}}/>*/}
-                            {/*{modal}*/}
                             <SElementText>
                                 <p>{element.title}</p>
                             </SElementText>
@@ -66,8 +53,6 @@ const PortfolioGraphic3DWork = () => {
             })}
         </SPortfolioWrapper>
     )
-
-
 }
 
 export default PortfolioGraphic3DWork;

@@ -14,8 +14,6 @@ const PortfolioWebWork = (): JSX.Element => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false)
 
-    // const {openModal, closeModal, modal, setModal} = useModal({StyleModal: SModal});
-
     const url = "http://localhost:3000/api/portfolio_web_realisations/";
 
     useEffect(() => {
@@ -44,20 +42,13 @@ const PortfolioWebWork = (): JSX.Element => {
                 return (
                     <div key={element.id}>
                         <SElementContainer>
-                            <SPortfolioDetailsLink to={`/portfolio/${element.id}`}>
+                            <SPortfolioDetailsLink to={`/portfolio/WW/${element.id}`}>
                                 <SElementImage src={element.image} alt={"img" + element.id}/>
                             </SPortfolioDetailsLink>
                             <SSoftwareDevIconsContainer>
                                 <SSoftwareDevIcons src={element.icon_section} alt={"icons software development"}>
                                 </SSoftwareDevIcons>
                             </SSoftwareDevIconsContainer>
-                            {/*<SElementImage src={element.image} alt={"img" + element.id} onClick={(): void => {*/}
-                            {/*    setModal(*/}
-                            {/*        <PortfolioDetailModal element={element} closeModal={closeModal}/>*/}
-                            {/*    )*/}
-                            {/*    openModal();*/}
-                            {/*}}/>*/}
-                            {/*{modal}*/}
                             <SElementText>
                                 <p>{element.title}</p>
                             </SElementText>

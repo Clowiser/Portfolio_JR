@@ -51,6 +51,13 @@ app.get('/api/portfolio_web_realisations', function (req, res, next) {
     });
 });
 
+app.get('/api/portfolio_web_realisations/:id', function (req, res, next) {
+    connection.query("SELECT * FROM portfoliodatabase.portfolio_web_realisations", function (error, result, fields) {
+        if (error) throw error;
+        res.end(JSON.stringify(result));
+    });
+});
+
 app.get('/api/portfolio_graphic_digital_creations', function (req, res, next) {
     connection.query("SELECT * FROM portfoliodatabase.portfolio_graphic_digital_creations", function (error, result, fields) {
         if (error) throw error;
@@ -58,7 +65,21 @@ app.get('/api/portfolio_graphic_digital_creations', function (req, res, next) {
     });
 });
 
+app.get('/api/portfolio_graphic_digital_creations/:id', function (req, res, next) {
+    connection.query("SELECT * FROM portfoliodatabase.portfolio_graphic_digital_creations", function (error, result, fields) {
+        if (error) throw error;
+        res.end(JSON.stringify(result));
+    });
+});
+
 app.get('/api/portfolio_graphic_3d', function (req, res, next) {
+    connection.query("SELECT * FROM portfoliodatabase.portfolio_graphic_3d", function (error, result, fields) {
+        if (error) throw error;
+        res.end(JSON.stringify(result));
+    });
+});
+
+app.get('/api/portfolio_graphic_3d/:id', function (req, res, next) {
     connection.query("SELECT * FROM portfoliodatabase.portfolio_graphic_3d", function (error, result, fields) {
         if (error) throw error;
         res.end(JSON.stringify(result));

@@ -1,18 +1,19 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {useIntl} from "react-intl";
-import {SElementContainer, SElementImage, SElementText, SPortfolioWrapper} from "../PortfolioIndex.styled";
-import PortfolioDetailModal from "../WebWork/PortfolioWebWorkDetailModal";
-import useModal from "../../utils/Hooks/useModal";
-import {SModal} from "../../utils/Modal/Modal.styled";
+import {
+    SElementContainer,
+    SElementImage,
+    SElementText,
+    SPortfolioDetailsLink,
+    SPortfolioWrapper
+} from "../../PortfolioIndex.styled";
 
 const PortfolioGraphicDigitalWork = () => {
     const intl = useIntl();
     const [data, setData] = useState<any[]>([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false)
-
-    const {openModal, closeModal, modal, setModal} = useModal({StyleModal: SModal});
 
     useEffect(() => {
         setLoading(true)
@@ -40,23 +41,18 @@ const PortfolioGraphicDigitalWork = () => {
                 return (
                     <div key={element.id}>
                         <SElementContainer>
-                            <SElementImage src={element.img_complete} alt={"img" + element.id} onClick={(): void => {
-                                setModal(
-                                    <PortfolioDetailModal element={element} closeModal={closeModal}/>
-                                )
-                                openModal();
-                            }}/>
-                            {modal}
-                            <SElementText>
-                                <p>{element.title}</p>
-                            </SElementText>
+                            <SPortfolioDetailsLink to={`/portfolio/DG/${element.id}`}>
+                                <SElementImage src={element.img_complete} alt={"img" + element.id}/>
+                                <SElementText>
+                                    <p>{element.title}</p>
+                                </SElementText>
+                            </SPortfolioDetailsLink>
                         </SElementContainer>
                     </div>
                 )
             })}
         </SPortfolioWrapper>
     )
-
 }
 
 export default PortfolioGraphicDigitalWork;
