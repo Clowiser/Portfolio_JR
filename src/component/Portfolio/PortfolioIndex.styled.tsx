@@ -101,7 +101,9 @@ export const SPortfolioDetailsLink = styled(Link)``;
 
 // PortfolioWebWork Details
 export const SPortfolioDetailContainer = styled.div`
-  display: flex`;
+  display: flex;
+  width: 80%;
+`;
 
 export const SElementDetailWrapper = styled.div`
   display: flex;

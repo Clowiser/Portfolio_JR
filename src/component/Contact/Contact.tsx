@@ -26,12 +26,15 @@ const Contact = (): JSX.Element => {
             <SContactHeader>
                 <STitle>Contact</STitle>
                 <p>Une question ? Un projet ? Une envie d'échanger ? N'hésitez pas à me contacter ! </p>
-                <img src={sit_pose} alt="Jessica assise sur une chaise de bureaux avec 1 chat"
-                     style={{width: "20rem"}}/>
+                {/*<img src={sit_pose} alt="Jessica assise sur une chaise de bureaux avec 1 chat"*/}
+                {/*     style={{width: "20rem"}}/>*/}
             </SContactHeader>
 
             <SContactFormContainer>
 
+                {/*    téléphone*/}
+                {/*    email*/}
+                
                 <SForm onSubmit={handleSubmit(onSubmit)}>
                     <SInputsWrapper>
                         <SInputsContainer>
@@ -48,13 +51,14 @@ const Contact = (): JSX.Element => {
                         <STextareaContainer>
                             <SInputWrapper>
                                 <span>Message :</span>
-                                <STextarea required rows={6}/>
+                                <STextarea required rows={7}/>
                             </SInputWrapper>
                         </STextareaContainer>
                     </SInputsWrapper>
 
                     <SButton type="submit">{intl.formatMessage({id: 'form_submit'})}</SButton>
                 </SForm>
+
             </SContactFormContainer>
         </SContactContainer>
     )

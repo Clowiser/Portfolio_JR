@@ -18,7 +18,7 @@ export const SContactFormContainer = styled.div`
   background-color: ${props => props.theme.thirdColor};
   margin-top: 2rem;
   width: auto;
-  height: 20rem;
+  height: auto;
   border-radius: 1rem;
 `;
 
@@ -28,7 +28,10 @@ export const SInputsWrapper = styled.div`
 `;
 
 export const SForm = styled.form`
-  padding: 1rem;
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
 `;
 
 export const SInputsContainer = styled.div`
@@ -44,13 +47,13 @@ export const SInputWrapper = styled.div`
 
 export const SInput = styled.input`
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
   border: none;
   width: auto;
   height: 2rem;
 `;
 
-export const STextareaContainer = styled.div`
-`;
+export const STextareaContainer = styled.div``;
 
 export const STextarea = styled.textarea`
   border-radius: 0.5rem;
@@ -60,6 +63,7 @@ export const STextarea = styled.textarea`
 `;
 
 export const SButton = styled.button`
+  padding: 0.5rem 2rem;
   border: none;
   border-radius: 0.5rem;
   color: ${props => props.theme.secondaryColor};

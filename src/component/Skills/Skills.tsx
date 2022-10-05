@@ -32,9 +32,8 @@ const Skills = () => {
                     <li>{intl.formatMessage({id: 'skill_title_react_developer'})}</li>
                     <li>{intl.formatMessage({id: 'skill_title_typescript_developer'})}</li>
                     <li>{intl.formatMessage({id: 'skill_title_Github_developer'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_Github_developer'})}</li>
+                    <li>Figma</li>
                     <li>GitLab</li>
-                    <li>etc</li>
                 </SSkillsList>
                 <SPortfolioHashLink smooth
                                     to={`/portfolio#web`}>Réalisations</SPortfolioHashLink>
@@ -48,12 +47,11 @@ const Skills = () => {
                 <SSkillsList style={{marginBottom: "5rem"}}>
                     <li>{intl.formatMessage({id: 'skill_title_list_pen_paper_imaginary'})}</li>
                     <li>{intl.formatMessage({id: 'skill_title_list_stylet_tablette_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_figma_imaginary'})}</li>
                     <li>{intl.formatMessage({id: 'skill_title_list_gimp_imaginary'})}</li>
                     <li>{intl.formatMessage({id: 'skill_title_list_blender_imaginary'})}</li>
                     <li>{intl.formatMessage({id: 'skill_title_list_photoshop_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_pen_paper_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_stylet_tablette_imaginary'})}</li>
+                    <li>Krita</li>
+                    <li>Paint to Sail</li>
                     <li>{intl.formatMessage({id: 'skill_title_list_figma_imaginary'})}</li>
                     <li>{intl.formatMessage({id: 'skill_title_list_gimp_imaginary'})}</li>
                     <li>{intl.formatMessage({id: 'skill_title_list_blender_imaginary'})}</li>
