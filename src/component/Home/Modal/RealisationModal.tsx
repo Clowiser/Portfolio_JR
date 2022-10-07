@@ -1,5 +1,5 @@
 import {
-    SElementDetailWrapper, SElementDetailImageInfos,
+    SElementDetailWrapper,
     SElementImageDetail,
     SPortfolioDetailContainer, SElementDetailInfos
 } from "../../Portfolio/PortfolioIndex.styled";
@@ -17,15 +17,13 @@ const RealisationModal = (props: IRealisationModal) => {
         <SPortfolioDetailContainer>
             <div key={element.id}>
                 <SElementDetailWrapper>
-                    <SElementDetailImageInfos>
-                        <SElementImageDetail src={element.image} alt={"img" + element.id}/>
-                        <SElementDetailInfos>
-                            <p>{element.title}</p>
-                            <p>{element.project}</p>
-                            <p>{element.tools}</p>
-                            <p>{element.demand}</p>
-                        </SElementDetailInfos>
-                    </SElementDetailImageInfos>
+                    <SElementImageDetail src={element.image} alt={"img" + element.id}/>
+                    <SElementDetailInfos>
+                        <p>{element.title}</p>
+                        <p>{element.project}</p>
+                        <p>{element.tools}</p>
+                        <p>{element.demand}</p>
+                    </SElementDetailInfos>
                 </SElementDetailWrapper>
             </div>
             <div onClick={(): void => {

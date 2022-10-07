@@ -1,5 +1,5 @@
 import {
-    SElementDetailWrapper, SElementDetailImageInfos,
+    SElementDetailWrapper,
     SElementImageDetail,
     SPortfolioDetailContainer,
     SShareLogo,
@@ -24,20 +24,18 @@ const PortfolioDetail = (props: IPortfolioDetail) => {
                     id && +id === data[i].id ? (
                         <div key={data[i].id}>
                             <SElementDetailWrapper>
-                                <SElementDetailImageInfos>
-                                    <SElementImageDetail src={data[i].image} alt={"img" + data[i].id}/>
-                                    <SElementDetailInfos>
-                                        <p>{data[i].title}</p>
-                                        <p>{data[i].subtitle}</p>
-                                        <p>{data[i].description}</p>
-                                        <SShareLogoContainer>
-                                            {data[i].github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}
-                                            {data[i].netifly_boolean === "true" ?
-                                                <SShareLogo src={logo_Netlify}/> : null}
-                                            {data[i].figma_boolean === "true" ? <SShareLogo src={logo_Figma}/> : null}
-                                        </SShareLogoContainer>
-                                    </SElementDetailInfos>
-                                </SElementDetailImageInfos>
+                                <SElementImageDetail src={data[i].image} alt={"img" + data[i].id}/>
+                                <SElementDetailInfos>
+                                    <p>{data[i].title}</p>
+                                    <p>{data[i].subtitle}</p>
+                                    <p>{data[i].description}</p>
+                                    <SShareLogoContainer>
+                                        {data[i].github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}
+                                        {data[i].netifly_boolean === "true" ?
+                                            <SShareLogo src={logo_Netlify}/> : null}
+                                        {data[i].figma_boolean === "true" ? <SShareLogo src={logo_Figma}/> : null}
+                                    </SShareLogoContainer>
+                                </SElementDetailInfos>
                             </SElementDetailWrapper>
                         </div>) : (<></>)
                 )

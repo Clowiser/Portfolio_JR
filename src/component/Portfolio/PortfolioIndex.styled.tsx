@@ -51,6 +51,7 @@ export const SElementContainer = styled.div`
   text-align: center;
   width: 80%;
   margin: 3rem auto;
+  position: relative;
 `;
 
 export const SElementImage = styled.img`
@@ -63,17 +64,13 @@ export const SElementImage = styled.img`
     transform: scale(1.15);
   }`;
 
-export const SElementSection = styled.div``;
-
-export const SSoftwareDevIconsContainer = styled.div`
-  position: relative`;
-
 export const SSoftwareDevIcons = styled.img`
   position: absolute;
   z-index: 2;
-  top: -1.5rem;
-  left: -17rem;
-  width: 3.5rem`;
+  bottom: -2rem;
+  left: -2rem;
+  width: 3.5rem;
+`;
 
 export const SPortfolioTitle = styled.h1`
   font-family: ${props => props.theme.fontFamily};
@@ -100,14 +97,11 @@ export const SPortfolioDetailsLink = styled(Link)``;
 
 
 // PortfolioWebWork Details
-export const SPortfolioDetailContainer = styled.div`
-  display: flex;
-  width: 80%;
-`;
+export const SPortfolioDetailContainer = styled.div``;
 
 export const SElementDetailWrapper = styled.div`
   display: flex;
-  margin: 5rem;
+  margin: 3rem;
 `;
 
 export const SElementImageDetail = styled.img`
@@ -115,18 +109,13 @@ export const SElementImageDetail = styled.img`
   border-radius: 1rem;
 `;
 
-export const SElementDetailImageInfos = styled.div`
-  display: flex;
-
-`;
 export const SElementDetailInfos = styled.div`
-  margin-left: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const SShareLogoContainer = styled.div`
-  text-align: center`;
-
-
-
-
-
+  text-align: center;
+`;

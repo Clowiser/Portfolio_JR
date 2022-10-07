@@ -1,5 +1,5 @@
 import {
-    SElementDetailWrapper, SElementDetailImageInfos,
+    SElementDetailWrapper,
     SElementImageDetail,
     SPortfolioDetailContainer,
     SShareLogo,
@@ -25,19 +25,17 @@ const PortfolioDetail = (props: IPortfolioDetailModal) => {
         <SPortfolioDetailContainer>
             <div key={element.id}>
                 <SElementDetailWrapper>
-                    <SElementDetailImageInfos>
-                        <SElementImageDetail src={element.image} alt={"img" + element.id}/>
-                        <SElementDetailInfos>
-                            <p>{element.title}</p>
-                            <p>{element.subtitle}</p>
-                            <p>{element.description}</p>
-                            <SShareLogoContainer>
-                                {element.github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}
-                                {element.netifly_boolean === "true" ? <SShareLogo src={logo_Netlify}/> : null}
-                                {element.figma_boolean === "true" ? <SShareLogo src={logo_Figma}/> : null}
-                            </SShareLogoContainer>
-                        </SElementDetailInfos>
-                    </SElementDetailImageInfos>
+                    <SElementImageDetail src={element.image} alt={"img" + element.id}/>
+                    <SElementDetailInfos>
+                        <p>{element.title}</p>
+                        <p>{element.subtitle}</p>
+                        <p>{element.description}</p>
+                        <SShareLogoContainer>
+                            {element.github_boolean === "true" ? <SShareLogo src={logo_Github}/> : null}
+                            {element.netifly_boolean === "true" ? <SShareLogo src={logo_Netlify}/> : null}
+                            {element.figma_boolean === "true" ? <SShareLogo src={logo_Figma}/> : null}
+                        </SShareLogoContainer>
+                    </SElementDetailInfos>
                 </SElementDetailWrapper>
             </div>
             <div onClick={(): void => {
