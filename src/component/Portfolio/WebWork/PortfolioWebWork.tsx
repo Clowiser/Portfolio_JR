@@ -7,19 +7,16 @@ import {
 } from "../PortfolioIndex.styled";
 import {useIntl} from "react-intl";
 
-
 const PortfolioWebWork = (): JSX.Element => {
     const intl = useIntl();
     const [data, setData] = useState<any[]>([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     const [options, setOptions] = useState("");
-
-    const url = "http://localhost:3000/api/portfolio_web_realisations/";
-
+    
     useEffect(() => {
         setLoading(true)
-        axios.get(url + '?_sort=section')
+        axios.get("http://localhost:3000/api/portfolio_web_realisations")
             .then(res => {
                 setData(res.data)
                 setLoading(false);
@@ -30,6 +27,28 @@ const PortfolioWebWork = (): JSX.Element => {
             })
     }, []);
 
+    useEffect(() => {
+        const handleChange = (currentOptions: string) => {
+            setOptions(currentOptions)
+            const sorted = [...data];
+
+            if (currentOptions === "technologie") {
+                sorted.sort((a, b) =>
+                    a.section > b.section ? 1 : -1,
+                );
+                setData(sorted);
+            } else if (currentOptions === "date") {
+                sorted.sort((a, b) =>
+                    a.date > b.date ? 1 : -1,
+                );
+                setData(sorted);
+            } else if (currentOptions === "") {
+                setData(sorted);
+            }
+        }
+        handleChange(options)
+    }, [options])
+
     if (error) {
         return <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
     }
@@ -37,16 +56,10 @@ const PortfolioWebWork = (): JSX.Element => {
         return <p>{intl.formatMessage({id: 'loading_api_loading'})}</p>
     }
 
-
-    const handleChange = (newOptions: string) => {
-        setOptions(newOptions)
-        console.log(newOptions)
-    }
-
     return (
         <>
             <select id="webWork" onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
-                handleChange(e.target.value)
+                setOptions(e.target.value)
             }} value={options}>
                 <option value="">Par défaut</option>
                 <option value="technologie">Par technologie</option>
@@ -76,3 +89,4 @@ const PortfolioWebWork = (): JSX.Element => {
 }
 
 export default PortfolioWebWork;
+

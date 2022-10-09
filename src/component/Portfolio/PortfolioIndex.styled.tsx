@@ -67,7 +67,7 @@ export const SElementImage = styled.img`
 export const SSoftwareDevIcons = styled.img`
   position: absolute;
   z-index: 2;
-  bottom: -2rem;
+  top: -1.5rem;
   left: -2rem;
   width: 3.5rem;
 `;

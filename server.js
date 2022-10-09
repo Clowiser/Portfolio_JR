@@ -85,3 +85,10 @@ app.get('/api/portfolio_graphic_3d/:id', function (req, res, next) {
         res.end(JSON.stringify(result));
     });
 });
+
+// app.get('/api/portfolio_web_realisations', function (req, res, next) {
+//     connection.query("SELECT * FROM portfoliodatabase.portfolio_web_realisations ORDER BY section", function (error, result, fields) {
+//         if (error) throw error;
+//         res.end(JSON.stringify(result));
+//     });
+// });

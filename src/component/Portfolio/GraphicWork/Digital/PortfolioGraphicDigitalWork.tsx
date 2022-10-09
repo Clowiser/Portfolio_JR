@@ -43,10 +43,10 @@ const PortfolioGraphicDigitalWork = () => {
                         <SElementContainer>
                             <SPortfolioDetailsLink to={`/portfolio/DG/${element.id}`}>
                                 <SElementImage src={element.img_complete} alt={"img" + element.id}/>
-                                <SElementText>
-                                    <p>{element.title}</p>
-                                </SElementText>
                             </SPortfolioDetailsLink>
+                            <SElementText>
+                                <p>{element.title}</p>
+                            </SElementText>
                         </SElementContainer>
                     </div>
                 )
