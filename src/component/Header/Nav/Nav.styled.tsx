@@ -2,8 +2,11 @@ import styled from "styled-components";
 import {Link, NavLink} from "react-router-dom";
 
 export const SNavContainer = styled.nav`
-  //background-color: #efefef;
-  padding: 1.5rem 0;
+  background-color: #FEFEFE;
+  top: 0;
+  position: sticky;
+  padding: 1rem 0;
+  z-index: 100;
 `;
 
 export const SUl = styled.div`
@@ -14,19 +17,18 @@ export const SUl = styled.div`
   list-style-type: none;
 `;
 
-export const SAMenu = styled.div`
+export const STitleNavWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
 `;
 
-export const SALogo = styled(Link)``;
+export const SLogoLink = styled(Link)``;
 
 export const SJRLogo = styled.img`
+  animation: pulsate-bck 3s ease-in-out infinite both;
   width: 15%;
   transform: scale(1);
-
-  animation: pulsate-bck 3s ease-in-out infinite both;
 
   @keyframes pulsate-bck {
     0% {
@@ -39,10 +41,9 @@ export const SJRLogo = styled.img`
       transform: scale(1);
     }
   }
-
 `;
 
-export const SA = styled(NavLink)`
+export const SLink = styled(NavLink)`
   text-decoration: none;
   color: ${props => props.theme.primaryColor};
   text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);

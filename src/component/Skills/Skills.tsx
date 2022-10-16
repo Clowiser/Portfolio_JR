@@ -1,10 +1,8 @@
 import {
-    SImgCode, SImgDraw,
-    SSkillsCodeText,
+    SImg,
+    SSkillsWrapper,
     SSkillsContainer,
-    SSkillsDrawText,
-    SSkillsList,
-    SSkillsWrapper
+    SSkillsList, SSkillsTitle,
 } from "./Skills.styled";
 import {useIntl} from "react-intl";
 import left from "../../style/assets/img/img/left.png"
@@ -12,56 +10,57 @@ import right from "../../style/assets/img/img/right.png"
 import {SPortfolioHashLink} from "../Portfolio/PortfolioIndex.styled";
 import React from "react";
 
+enum ESSkillsDeveloper {
+    html_css = "html_css",
+    javascript = "javascript",
+    react = "react",
+    typescript = "typescript",
+    github = "github",
+    gitlab = "gitlab",
+    apollo = "apollo",
+    graphql = "graphql",
+    sql = "sql",
+    jest = "jest",
+}
+
+enum ESkillsImaginary {
+    pen_paper = "pen_paper",
+    stylet_tablet = "stylet_tablet",
+    figma = "figma",
+    gimp = "gimp",
+    blender = "blender",
+    photoshop = "photoshop",
+    krita = "krita",
+    paintTooSai = "paintTooSai",
+    animation = "animation",
+}
+
 const Skills = () => {
     const intl = useIntl();
 
     return (
         <SSkillsContainer>
-
-            <SImgCode src={left} alt="Personnage JR développeuse"/>
-            <SSkillsCodeText>
-                <p>{intl.formatMessage({id: 'skill_subtitle_developer'})}</p>
-                <p>Mes appétences dans le développement</p>
+            <SImg src={left} alt="Personnage JR développeuse"/>
+            <SSkillsWrapper>
+                <SSkillsTitle>{intl.formatMessage({id: 'skill_subtitle_developer'})}</SSkillsTitle>
                 <SSkillsList style={{marginBottom: "5rem"}}>
-                    <li>{intl.formatMessage({id: 'skill_title_html_css_developer'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_react_developer'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_typescript_developer'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_Github_developer'})}</li>
-                    <li>GitLab</li>
-                    <li>{intl.formatMessage({id: 'skill_title_html_css_developer'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_react_developer'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_typescript_developer'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_Github_developer'})}</li>
-                    <li>Figma</li>
-                    <li>GitLab</li>
+                    {Object.entries(ESSkillsDeveloper).map((entry) => (
+                        <li>{intl.formatMessage({id: `skill_title_${entry[1]}_developer`})}</li>))}
                 </SSkillsList>
                 <SPortfolioHashLink smooth
                                     to={`/portfolio#web`}>Réalisations</SPortfolioHashLink>
-            </SSkillsCodeText>
+            </SSkillsWrapper>
 
-            <SSkillsDrawText>
-                {/*<h2>{intl.formatMessage({id: 'skill_title_imaginary'})}</h2>*/}
-                <p>{intl.formatMessage({id: 'skill_subtitle_imaginary'})}</p>
-                {/*<p>{intl.formatMessage({id: 'skill_title_list_imaginary'})}</p>*/}
-                <p>Mes appétences dans le graphisme</p>
+            <SSkillsWrapper>
+                <SSkillsTitle>{intl.formatMessage({id: 'skill_subtitle_imaginary'})}</SSkillsTitle>
                 <SSkillsList style={{marginBottom: "5rem"}}>
-                    <li>{intl.formatMessage({id: 'skill_title_list_pen_paper_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_stylet_tablette_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_gimp_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_blender_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_photoshop_imaginary'})}</li>
-                    <li>Krita</li>
-                    <li>Paint to Sail</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_figma_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_gimp_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_blender_imaginary'})}</li>
-                    <li>{intl.formatMessage({id: 'skill_title_list_photoshop_imaginary'})}</li>
+                    {Object.entries(ESkillsImaginary).map((entry) => (
+                        <li>{intl.formatMessage({id: `skill_title_${entry[1]}_imaginary`})}</li>))}
                 </SSkillsList>
                 <SPortfolioHashLink smooth
                                     to={`/portfolio#graphics`}>Réalisations</SPortfolioHashLink>
-            </SSkillsDrawText>
-            <SImgDraw src={right} alt="Personnage JR dessinant"/>
-
+            </SSkillsWrapper>
+            <SImg src={right} alt="Personnage JR dessinant"/>
         </SSkillsContainer>
     )
 }

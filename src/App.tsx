@@ -24,7 +24,7 @@ const App = () => {
             <IntlProvider locale={initLocal} defaultLocale={locales.fr} messages={message[initLocal]}
             >
                 <ThemeProvider theme={theme}>
-                    <languageContext.Provider value={{initLocal, handleSelect}}>
+                    <languageContext.Provider value={{handleSelect}}>
                         <FontsStyle/>
                         <PortfolioApp/>
                         <Content/>

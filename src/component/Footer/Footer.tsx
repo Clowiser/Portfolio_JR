@@ -2,7 +2,7 @@ import React from "react";
 import {useIntl} from "react-intl";
 import {
     SFooterContainer,
-    SMottoNetworkWrapper,
+    SFooterWrapper,
     SCopyrightWrapper,
     SNetworkLogo,
     SNetworkWrapper, SMotto
@@ -16,7 +16,7 @@ const Footer = () => {
 
     return (
         <SFooterContainer>
-            <SMottoNetworkWrapper>
+            <SFooterWrapper>
                 <SMotto>{intl.formatMessage({id: 'Footer_Motto'})}</SMotto>
                 <SNetworkWrapper>
                     <SNetworkLogo src={logo_Linkedin}
@@ -28,7 +28,7 @@ const Footer = () => {
                 <SCopyrightWrapper>
                     {intl.formatMessage({id: 'Footer_copyright'})}
                 </SCopyrightWrapper>
-            </SMottoNetworkWrapper>
+            </SFooterWrapper>
         </SFooterContainer>
     );
 }

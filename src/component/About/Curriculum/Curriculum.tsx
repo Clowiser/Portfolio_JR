@@ -12,25 +12,7 @@ const Curriculum = (): JSX.Element => {
 
     return (
         <SCurriculumContainer>
-            <SWebSkillsContainer>
-                <h2>Mes Compétences Professionnelles</h2>
-                <p>FR</p>
-                <p>EN</p>
-            </SWebSkillsContainer>
-
-            <SWebSkillsContainer>
-                <h2>Mes Web Skills</h2>
-                <p>Mettre logo + barre d'évolution</p>
-            </SWebSkillsContainer>
-
-            <SWebSkillsContainer>
-                <h2>Mes Expériences professionnelles</h2>
-                <p>répétition de la BD</p>
-            </SWebSkillsContainer>
-
             <SFormationsContainer>
-                <h2>Mes formations</h2>
-                <p>faire une illustration de chaque sections + mettre logo des écoles derrière</p>
                 <SFormationsWrapper>
                     <SFormationsSections>
                         <h3>Développement Web :</h3>

@@ -8,7 +8,7 @@ export const SFooterContainer = styled.div`
   padding: 5rem 0;
 `;
 
-export const SMottoNetworkWrapper = styled.div``;
+export const SFooterWrapper = styled.div``;
 
 export const SMotto = styled.h2`
   text-align: center;
@@ -28,6 +28,3 @@ export const SCopyrightWrapper = styled.div`
   margin-top: 2rem;
   text-align: center;
 `;
-
-
-

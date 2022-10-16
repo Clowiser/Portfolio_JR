@@ -4,9 +4,8 @@ export const SAboutContainer = styled.div`
   margin: 1em;
 `;
 
-export const SAboutSectionPresentationContainer = styled.div``;
 
-export const SAboutSectionPresentation = styled.div`
+export const SAboutSectionPresentationContainer = styled.div`
   text-align: center;
   margin: 0 3em;
 `;
@@ -22,21 +21,10 @@ export const SAboutTextContainer = styled.div`
   align-items: center;
 `;
 
-export const SAboutTextLeft = styled.div`
-  width: 80%;
+export const SAboutText = styled.div`
   background-color: #262223;
   border-radius: 1em;
   margin: 1em 0;
-  position: relative;
-  left: -8em;
-`;
-
-export const SAboutTextRight = styled.div`
-  width: 80%;
-  background-color: #efefef;
-  border-radius: 1em;
-  position: relative;
-  right: -8em;
 `;
 
 export const SAboutSectionCV = styled.div`

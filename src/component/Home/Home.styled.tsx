@@ -1,20 +1,17 @@
 import styled from "styled-components";
 
-export const SHomeContainer = styled.div``;
-
-export const SHeaderWrapper = styled.div`
+export const SHomeHeaderWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
 
-export const SHeaderContainer = styled.div`
+export const SHomeHeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
 `;
 
-export const SHeaderTitle = styled.h1`
+export const STitle = styled.h1`
   font-family: ${props => props.theme.fontFamily};
   text-align: center;
   letter-spacing: 0.2rem;
@@ -47,8 +44,8 @@ export const SPresentationText = styled.div`
 `;
 
 export const SImg = styled.img`
-  width: 45%;
   animation: floating 6s ease-in-out infinite;
+  width: 45%;
 
   @keyframes floating {
     0% {
@@ -61,9 +58,4 @@ export const SImg = styled.img`
       transform: translate(0, -0px);
     }
   }
-
 `;
-
-export const SSkillsComponent = styled.div``;
-
-export const SRealisationComponent = styled.div``;

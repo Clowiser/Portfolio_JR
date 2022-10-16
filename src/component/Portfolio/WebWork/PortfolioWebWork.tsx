@@ -3,7 +3,7 @@ import axios from "axios";
 import {
     SElementContainer,
     SElementImage, SElementText, SPortfolioDetailsLink,
-    SPortfolioWrapper, SSoftwareDevIcons,
+    SPortfolioWrapper, SSelect, SSoftwareDevIcons,
 } from "../PortfolioIndex.styled";
 import {useIntl} from "react-intl";
 
@@ -12,8 +12,8 @@ const PortfolioWebWork = (): JSX.Element => {
     const [data, setData] = useState<any[]>([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-    const [options, setOptions] = useState("");
-    
+    const [options, setOptions] = useState("default");
+
     useEffect(() => {
         setLoading(true)
         axios.get("http://localhost:3000/api/portfolio_web_realisations")
@@ -42,7 +42,10 @@ const PortfolioWebWork = (): JSX.Element => {
                     a.date > b.date ? 1 : -1,
                 );
                 setData(sorted);
-            } else if (currentOptions === "") {
+            } else if (currentOptions === "default") {
+                sorted.sort((a, b) =>
+                    a.id > b.id ? 1 : -1,
+                );
                 setData(sorted);
             }
         }
@@ -58,13 +61,13 @@ const PortfolioWebWork = (): JSX.Element => {
 
     return (
         <>
-            <select id="webWork" onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
+            <SSelect id="webWork" onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
                 setOptions(e.target.value)
             }} value={options}>
                 <option value="">Par défaut</option>
                 <option value="technologie">Par technologie</option>
                 <option value="date">Par date</option>
-            </select>
+            </SSelect>
 
             <SPortfolioWrapper>
                 {data.map((element) => {
@@ -89,4 +92,3 @@ const PortfolioWebWork = (): JSX.Element => {
 }
 
 export default PortfolioWebWork;
-

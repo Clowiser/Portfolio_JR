@@ -8,7 +8,6 @@ export const SPortfolioContainer = styled.div`
   color: ${props => props.theme.primaryColor};
 `;
 
-//Link
 export const SPortfolioWrapperLink = styled.div`
   margin: 6rem auto;
   display: flex;
@@ -26,18 +25,15 @@ export const SImgCode = styled.img`
 `;
 
 export const SPortfolioHashLink = styled(HashLink)`
-
   :hover {
     transform: scale(1.15);
   }
 `;
 
-//Portfolio
 export const SPortfolioSection = styled.div`
-  margin: 10em auto`;
+  margin: 10em auto;
+`;
 
-
-//Each Part
 export const SPortfolioWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -68,7 +64,7 @@ export const SSoftwareDevIcons = styled.img`
   position: absolute;
   z-index: 2;
   top: -1.5rem;
-  left: -2rem;
+  left: -1.5rem;
   width: 3.5rem;
 `;
 
@@ -95,8 +91,6 @@ export const SShareLogo = styled.img`
 
 export const SPortfolioDetailsLink = styled(Link)``;
 
-
-// PortfolioWebWork Details
 export const SPortfolioDetailContainer = styled.div``;
 
 export const SElementDetailWrapper = styled.div`
@@ -118,4 +112,18 @@ export const SElementDetailInfos = styled.div`
 
 export const SShareLogoContainer = styled.div`
   text-align: center;
+`;
+
+export const SSelect = styled.select`
+  box-shadow: -0.033em 0 2px rgba(255, 0, 0, 0.67), 0.033em 0 2px rgba(0, 255, 255, 0.67);
+  color: ${props => props.theme.primaryColor};
+  text-shadow: -0.033em 0 1px rgba(255, 0, 0, 0.67), 0.033em 0 1px rgba(0, 255, 255, 0.67);
+  border-radius: .25rem;
+  width: 20em;
+  height: 2em;
+  border: 0;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  flex: 1;
+  padding: 0 1em;
 `;

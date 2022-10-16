@@ -1,4 +1,4 @@
-import {SImgFlag, SLocalFlagContainer} from "./LocaleFlag.styled";
+import {SImgFlag, SinputHide, SLocalFlagContainer} from "./LocaleFlag.styled";
 import france_flag from "../../../../style/assets/img/flag/france.png";
 import great_britain_flag from "../../../../style/assets/img/flag/great_britain.png";
 import React, {useContext} from "react";
@@ -7,28 +7,19 @@ import {locales} from "../../../../i18n/translate/message";
 
 const LocaleFlag = () => {
     // @ts-ignore
-    const {initLocal, handleSelect} = useContext(languageContext);
+    const {handleSelect} = useContext(languageContext);
 
     return (
         <SLocalFlagContainer>
-            {initLocal === locales.fr ? <SImgFlag src={france_flag} alt="Drapeau Français"/> :
-                <SImgFlag src={great_britain_flag} alt="Drapeau anglais"/>}
-            <select onChange={handleSelect} defaultValue={initLocal}>
-                {[locales.en, locales.fr].map(l => (
-                    <option key={l}>{l}</option>
-                ))}
-            </select>
-            {/*<SFlagTranslateContainer>*/}
-            {/*    <SFlag onClick={() => handleLanguageEn(locales.fr)} defaultValue={initLocalD}>*/}
-            {/*        <SImgFlag src={france_flag}*/}
-            {/*                  alt="Drapeau Français"/>*/}
-            {/*    </SFlag>*/}
-            {/*    <SFlag onClick={() => handleLanguageEn(locales.en)} defaultValue={initLocalD}>*/}
-            {/*        <SImgFlag*/}
-            {/*            src={great_britain_flag}*/}
-            {/*            alt="Drapeau anglais"/>*/}
-            {/*    </SFlag>*/}
-            {/*</SFlagTranslateContainer>*/}
+            <label>
+                <SImgFlag src={france_flag} alt="Drapeau Français"/>
+                <SinputHide type="radio" name="locale" value={locales.fr} onChange={handleSelect}/>
+            </label>
+
+            <label>
+                <SImgFlag src={great_britain_flag} alt="Drapeau anglais"/>
+                <SinputHide type="radio" name="locale" value={locales.en} onChange={handleSelect}/>
+            </label>
         </SLocalFlagContainer>
     )
 }

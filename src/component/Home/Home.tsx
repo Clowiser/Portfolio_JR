@@ -1,10 +1,10 @@
 import React from "react";
 import {
-    SHeaderContainer,
-    SHeaderTitle, SHeaderWrapper, SHomeContainer, SImg,
+    SHomeHeaderContainer,
+    STitle, SHomeHeaderWrapper, SImg,
     SPresentationContainer,
     SPresentationText,
-    SPresentationTitle, SPresentationWrapper, SRealisationComponent, SSkillsComponent
+    SPresentationTitle, SPresentationWrapper,
 } from "./Home.styled";
 import {useIntl} from "react-intl";
 import Realisation from "./Realisations/Realisation";
@@ -15,15 +15,15 @@ const Home = () => {
     const intl = useIntl();
 
     return (
-        <SHomeContainer>
-            <SHeaderContainer>
-                <SHeaderWrapper>
-                    <SHeaderTitle>
+        <>
+            <SHomeHeaderContainer>
+                <SHomeHeaderWrapper>
+                    <STitle>
                         {intl.formatMessage({id: 'home_header_title'})}
-                    </SHeaderTitle>
-                </SHeaderWrapper>
+                    </STitle>
+                </SHomeHeaderWrapper>
                 <SImg src={avatar} alt="logo JR"/>
-            </SHeaderContainer>
+            </SHomeHeaderContainer>
 
             <SPresentationContainer>
                 <SPresentationWrapper>
@@ -32,14 +32,9 @@ const Home = () => {
                 </SPresentationWrapper>
             </SPresentationContainer>
 
-            <SSkillsComponent>
-                <Skills/>
-            </SSkillsComponent>
-
-            <SRealisationComponent>
-                <Realisation/>
-            </SRealisationComponent>
-        </SHomeContainer>
+            <Skills/>
+            <Realisation/>
+        </>
     );
 }
 
