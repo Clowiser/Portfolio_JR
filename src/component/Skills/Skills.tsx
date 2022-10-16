@@ -43,6 +43,7 @@ const Skills = () => {
             <SImg src={left} alt="Personnage JR développeuse"/>
             <SSkillsWrapper>
                 <SSkillsTitle>{intl.formatMessage({id: 'skill_subtitle_developer'})}</SSkillsTitle>
+                <p>Mes principaux outils :</p>
                 <SSkillsList style={{marginBottom: "5rem"}}>
                     {Object.entries(ESSkillsDeveloper).map((entry) => (
                         <li>{intl.formatMessage({id: `skill_title_${entry[1]}_developer`})}</li>))}
@@ -53,6 +54,7 @@ const Skills = () => {
 
             <SSkillsWrapper>
                 <SSkillsTitle>{intl.formatMessage({id: 'skill_subtitle_imaginary'})}</SSkillsTitle>
+                <p>Mes principaux outils :</p>
                 <SSkillsList style={{marginBottom: "5rem"}}>
                     {Object.entries(ESkillsImaginary).map((entry) => (
                         <li>{intl.formatMessage({id: `skill_title_${entry[1]}_imaginary`})}</li>))}

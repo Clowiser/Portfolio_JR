@@ -4,27 +4,52 @@ export const SAboutContainer = styled.div`
   margin: 1em;
 `;
 
-
-export const SAboutSectionPresentationContainer = styled.div`
+export const SSectionPresentationContainer = styled.div`
   text-align: center;
   margin: 0 3em;
 `;
 
+export const SPhotoContainer = styled.div`
+  position: absolute;
+`;
+
 export const SAboutPhoto = styled.img`
-  width: 20%;
-  border-radius: 1em;
+  position: relative;
+  top: -5rem;
+  width: 10rem;
+  border: solid 4px white;
+  border-radius: 7rem;
 `;
 
-export const SAboutTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+export const SParticuleBlue = styled.img`
+  position: relative;
+  top: -3rem;
+  left: -15rem;
+  width: 15rem;
+  z-index: 100;
+  transform: rotate(15deg);
+  animation: spin 60s linear infinite;
 
-export const SAboutText = styled.div`
+  @keyframes spin {
+    50% {
+      transform: rotate(90deg);
+    }
+  }`;
+
+export const SPhotoPresentationWrapper = styled.div`
   background-color: #262223;
   border-radius: 1em;
   margin: 1em 0;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+`;
+
+export const SText = styled.div`
+  color: ${props => props.theme.thirdColor};
+  padding: 2rem;
+  width: 80%;
+  margin-left: 13rem;
 `;
 
 export const SAboutSectionCV = styled.div`

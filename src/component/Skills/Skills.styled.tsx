@@ -10,7 +10,7 @@ export const SSkillsContainer = styled.div`
 
 export const SSkillsList = styled.li`
   list-style: none;
-  height: 15rem;
+  height: 13rem;
 `;
 
 export const SSkillsWrapper = styled.div`

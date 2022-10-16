@@ -33,6 +33,7 @@
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^5.0.1",
+    "react-tooltip": "^4.4.0",
     "selenium-webdriver": "^4.5.0",
     "styled-components": "^5.3.5",
     "styled-react-modal": "^3.0.0",

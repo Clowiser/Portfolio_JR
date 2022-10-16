@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-export const SCurriculumContainer = styled.div`
-  border: 2px solid #282d32;
-  border-radius: 1rem;
-`;
+export const SCurriculumContainer = styled.div``;
 
 export const SFormationsContainer = styled.div``;
 

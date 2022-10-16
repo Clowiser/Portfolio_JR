@@ -36,7 +36,6 @@ const Curriculum = (): JSX.Element => {
 
         </SCurriculumContainer>
     )
-
 }
 
 export default Curriculum;
