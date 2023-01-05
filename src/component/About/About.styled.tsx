@@ -26,9 +26,9 @@ export const SParticuleBlue = styled.img`
   top: -3rem;
   left: -15rem;
   width: 15rem;
-  z-index: 100;
+  z-index: 1;
   transform: rotate(15deg);
-  animation: spin 60s linear infinite;
+  animation: spin 10s linear infinite;
 
   @keyframes spin {
     50% {

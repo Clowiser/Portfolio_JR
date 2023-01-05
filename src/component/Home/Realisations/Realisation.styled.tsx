@@ -43,13 +43,6 @@ export const SCircleText = styled.div`
   top: 7.5em;
   left: 7.5em;
   width: 5em;
-  //opacity: 0;
-  //:hover {
-  //  color: red;
-  //  font-size: 2em;
-  //  opacity: 1;
-  //  z-index: 2;
-  //}
 `;
 
 export const SCircleImg = styled.img`
@@ -61,6 +54,6 @@ export const SCircleImg = styled.img`
 
   &:hover {
     transform: scale(1.15);
-    //filter: brightness(50%) blur(1px);
+    filter: brightness(90%) blur(1px);
   }
 `;

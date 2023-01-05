@@ -10,7 +10,7 @@ import right from "../../style/assets/img/img/right.png"
 import {SPortfolioHashLink} from "../Portfolio/PortfolioIndex.styled";
 import React from "react";
 
-enum ESSkillsDeveloper {
+enum ESkillsDeveloper {
     html_css = "html_css",
     javascript = "javascript",
     react = "react",
@@ -45,7 +45,7 @@ const Skills = () => {
                 <SSkillsTitle>{intl.formatMessage({id: 'skill_subtitle_developer'})}</SSkillsTitle>
                 <p>Mes principaux outils :</p>
                 <SSkillsList style={{marginBottom: "5rem"}}>
-                    {Object.entries(ESSkillsDeveloper).map((entry) => (
+                    {Object.entries(ESkillsDeveloper).map((entry) => (
                         <li>{intl.formatMessage({id: `skill_title_${entry[1]}_developer`})}</li>))}
                 </SSkillsList>
                 <SPortfolioHashLink smooth

@@ -10,7 +10,7 @@ interface IRealisationModal {
     element: any;
 }
 
-const RealisationModal = (props: IRealisationModal) => {
+const Modal = (props: IRealisationModal) => {
     const {closeModal, element} = props;
 
     return (
@@ -32,4 +32,4 @@ const RealisationModal = (props: IRealisationModal) => {
         </SPortfolioDetailContainer>)
 }
 
-export default RealisationModal;
+export default Modal;

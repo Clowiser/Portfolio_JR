@@ -55,6 +55,10 @@ export const message = {
         //About
         about_title: 'Who I am?',
         about_subtitle_about: "About me!",
+        // Curriculum
+        curriculum_title_web: "Web Development",
+        curriculum_title_arts: "Arts & Creations",
+        curriculum_title_hostellerie: "Hotel & catering",
         //Contact
         contact_title: "Contact",
         form_submit: "Send",
@@ -114,6 +118,10 @@ export const message = {
         //About
         about_title: 'Qui suis-je ?',
         about_subtitle_about: "A propos de moi !",
+        // Curriculum
+        curriculum_title_web: "Développement Web",
+        curriculum_title_arts: "Arts & Créations",
+        curriculum_title_hostellerie: "Hôtellerie & Restauration",
         //Contact
         contact_title: "Contact",
         form_submit: "Envoyer",

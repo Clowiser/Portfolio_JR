@@ -6,7 +6,7 @@ export const SNavContainer = styled.nav`
   top: 0;
   position: sticky;
   padding: 1rem 0;
-  z-index: 100;
+  z-index: 1;
 `;
 
 export const SUl = styled.div`

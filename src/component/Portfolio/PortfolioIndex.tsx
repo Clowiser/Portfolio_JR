@@ -18,7 +18,6 @@ import right from "../../style/assets/img/img/BannerRight.png";
 const PortfolioIndex = (): JSX.Element => {
     const intl = useIntl()
 
-
     return (
         <SPortfolioContainer>
             <SPortfolioWrapperLink>

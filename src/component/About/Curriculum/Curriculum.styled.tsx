@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const SCurriculumContainer = styled.div``;
+export const SCurriculumContainer = styled.div`
+  width: 80%;
+  margin: auto`;
 
 export const SFormationsContainer = styled.div``;
 

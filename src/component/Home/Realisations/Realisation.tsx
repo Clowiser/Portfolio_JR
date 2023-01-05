@@ -11,7 +11,7 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import useModal from "../../utils/Hooks/useModal";
 import {SModal} from "../../utils/Modal/Modal.styled";
-import RealisationModal from "../Modal/RealisationModal";
+import Modal from "../Modal/Modal";
 
 const Realisation = () => {
     const intl = useIntl();
@@ -52,7 +52,7 @@ const Realisation = () => {
                             <SRealisationElementList>
                                 <SCircleImgWrapper>
                                     <SCircleImg src={element.image} alt="img" onClick={() => {
-                                        setModal(<RealisationModal closeModal={closeModal} element={element}/>)
+                                        setModal(<Modal closeModal={closeModal} element={element}/>)
                                         openModal();
                                     }}/>
                                     {/*<SCircleText>{element.title}</SCircleText>*/}

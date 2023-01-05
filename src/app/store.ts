@@ -1,7 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit'
 import counterReducer from '../component/counter/counterSlice'
 
-
 // 1 - on définit l'état racine et les types
 
 const store = configureStore({
