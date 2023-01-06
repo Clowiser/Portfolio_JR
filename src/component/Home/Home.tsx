@@ -7,7 +7,7 @@ import {
     SPresentationTitle, SPresentationWrapper,
 } from "./Home.styled";
 import {useIntl} from "react-intl";
-import Realisation from "./Realisations/Realisation";
+import ThreeRealisations from "./ThreeRealisations/ThreeRealisations";
 import Skills from "../Skills/Skills";
 import avatar from "../../style/assets/img/banner/Avatar_dev-min.png"
 
@@ -23,7 +23,6 @@ const Home = () => {
                     </STitle>
                 </SHomeHeaderWrapper>
                 <SImg src={avatar} alt="logo JR"/>
-                
             </SHomeHeaderContainer>
 
             <SPresentationContainer>
@@ -34,7 +33,7 @@ const Home = () => {
             </SPresentationContainer>
 
             <Skills/>
-            <Realisation/>
+            <ThreeRealisations/>
         </>
     );
 }

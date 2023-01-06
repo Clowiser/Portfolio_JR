@@ -13,6 +13,10 @@ export const SSkillsList = styled.li`
   height: 13rem;
 `;
 
+export const SSkillsLogoWrapper = styled.div`
+  width: 15rem;
+`;
+
 export const SSkillsWrapper = styled.div`
   width: 15rem;
   padding: 2rem;
@@ -24,17 +28,16 @@ export const SSkillsTitle = styled.p`
   height: 7rem;
 `;
 
-export const SImg = styled.img`
-  animation: pulsate-bck 4s ease-in-out infinite both;
+export const SSkillsLogoImg = styled.img`
+  width: 5rem;
+  animation: rotation 4s infinite both;
 
-  @keyframes pulsate-bck {
-    0% {
-      transform: scale(1);
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
     }
-    50% {
-      transform: scale(0.9);
+    to {
+      transform: rotate(359deg);
     }
-    100% {
-      transform: scale(1);
-    }
-  }`;
+  }
+`;

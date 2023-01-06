@@ -5,7 +5,7 @@ import {
     SRealisationElementList,
     SRealisationTitle,
     SRealisationElementWrapper, SCircleImgWrapper, SCircleText
-} from "./Realisation.styled";
+} from "./ThreeRealisations.styled";
 import {useIntl} from "react-intl";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
@@ -13,7 +13,7 @@ import useModal from "../../utils/Hooks/useModal";
 import {SModal} from "../../utils/Modal/Modal.styled";
 import Modal from "../Modal/Modal";
 
-const Realisation = () => {
+const ThreeRealisations = () => {
     const intl = useIntl();
     const [data, setData] = useState<any[]>([]);
     const [error, setError] = useState(null);
@@ -67,4 +67,4 @@ const Realisation = () => {
     )
 }
 
-export default Realisation;
+export default ThreeRealisations;

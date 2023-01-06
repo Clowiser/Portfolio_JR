@@ -7,9 +7,9 @@ import {
     SNetworkLogo,
     SNetworkWrapper, SMotto
 } from "./Footer.styled";
-import logo_Github from "../../style/assets/img/logo/github_logo.png";
-import logo_Linkedin from "../../style/assets/img/logo/linkedin_logo.png";
-import logo_Gmail from "../../style/assets/img/logo/gmail_logo.png";
+import logo_Github from "../../style/assets/img/logo/technos/github_logo.png";
+import logo_Linkedin from "../../style/assets/img/logo/technos/linkedin_logo.png";
+import logo_Gmail from "../../style/assets/img/logo/technos/gmail_logo.png";
 
 const Footer = () => {
     const intl = useIntl();

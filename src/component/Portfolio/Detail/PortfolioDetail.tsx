@@ -5,9 +5,9 @@ import {
     SShareLogo,
     SShareLogoContainer, SElementDetailInfos
 } from "../PortfolioIndex.styled";
-import logo_Github from "../../../style/assets/img/logo/github_logo.png";
-import logo_Netlify from "../../../style/assets/img/logo/netlify_logo.png";
-import logo_Figma from "../../../style/assets/img/logo/figma_logo.png";
+import logo_Github from "../../../style/assets/img/logo/technos/github_logo.png";
+import logo_Netlify from "../../../style/assets/img/logo/technos/netlify_logo.png";
+import logo_Figma from "../../../style/assets/img/logo/draws/figma_logo.png";
 
 interface IPortfolioDetail {
     data: any;

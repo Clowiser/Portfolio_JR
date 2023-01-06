@@ -35,7 +35,7 @@ export const SListUnique = styled.div`
 
 export const SCircleImgWrapper = styled.div`
   position: relative;
-  z-index: 1;
+
 `;
 
 export const SCircleText = styled.div`
