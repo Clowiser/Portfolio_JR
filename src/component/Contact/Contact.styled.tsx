@@ -28,10 +28,9 @@ export const SInputsWrapper = styled.div`
 `;
 
 export const SForm = styled.form`
-  padding: 2rem;
-  width: 80%;
   margin: auto;
-  text-align: center;
+  padding: 2rem 0;
+  width: 80%;
 `;
 
 export const SInputsContainer = styled.div`
@@ -46,20 +45,22 @@ export const SInputWrapper = styled.div`
 `;
 
 export const SInput = styled.input`
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  border-radius: ${props => props.theme.border};
+  margin: 1rem 0;
   border: none;
   width: auto;
   height: 2rem;
+  padding-left: 0.5rem;
 `;
 
 export const STextareaContainer = styled.div``;
 
 export const STextarea = styled.textarea`
-  border-radius: 0.5rem;
+  border-radius: ${props => props.theme.border};
+  margin: 1rem 0;
   border: none;
-  resize: none;
-  width: 40rem;
+  width: 100%;
+  padding-left: 0.5rem;
 `;
 
 export const SButton = styled.button`
@@ -68,6 +69,7 @@ export const SButton = styled.button`
   border-radius: 0.5rem;
   color: ${props => props.theme.secondaryColor};
   background-color: ${props => props.theme.fourthColor};
+  cursor: pointer;
 `;
 
 

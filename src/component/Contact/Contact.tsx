@@ -10,15 +10,17 @@ import {
 } from "./Contact.styled";
 import {useIntl} from "react-intl";
 import {useForm} from "react-hook-form";
-import sit_pose from "../../style/assets/img/img/sit.png"
+import {useAlert} from "react-alert";
 
 const Contact = (): JSX.Element => {
     const intl = useIntl();
+    const alert = useAlert();
 
-    const {register, handleSubmit, formState: {errors}} = useForm();
+    const {register, handleSubmit} = useForm();
 
-    const onSubmit = () => {
-        console.log("OK")
+    const onSubmit = (data: any) => {
+        console.log(data)
+        alert.success("votre message a bien été envoyé !")
     }
 
     return (
@@ -26,32 +28,26 @@ const Contact = (): JSX.Element => {
             <SContactHeader>
                 <STitle>Contact</STitle>
                 <p>Une question ? Un projet ? Une envie d'échanger ? N'hésitez pas à me contacter ! </p>
-                {/*<img src={sit_pose} alt="Jessica assise sur une chaise de bureaux avec 1 chat"*/}
-                {/*     style={{width: "20rem"}}/>*/}
             </SContactHeader>
 
             <SContactFormContainer>
-
-                {/*    téléphone*/}
-                {/*    email*/}
-                
                 <SForm onSubmit={handleSubmit(onSubmit)}>
                     <SInputsWrapper>
                         <SInputsContainer>
                             <SInputWrapper>
                                 <span>Nom :</span>
-                                <SInput type="text" required/>
+                                <SInput type="text" {...register("name", {required: true})}/>
                             </SInputWrapper>
                             <SInputWrapper>
                                 <span>E-mail :</span>
-                                <SInput type="text" required/>
+                                <SInput type="email" {...register("email", {required: true})}/>
                             </SInputWrapper>
                         </SInputsContainer>
 
                         <STextareaContainer>
                             <SInputWrapper>
                                 <span>Message :</span>
-                                <STextarea required rows={7}/>
+                                <STextarea required rows={7}  {...register("message")}/>
                             </SInputWrapper>
                         </STextareaContainer>
                     </SInputsWrapper>

@@ -19,13 +19,20 @@ import gitlab from "../../style/assets/img/logo/technos/gitlab_logo.png"
 import jest from "../../style/assets/img/logo/technos/jest_logo.png"
 import pen from "../../style/assets/img/logo/draws/pen_logo.png"
 import figma from "../../style/assets/img/logo/draws/figma_logo.png"
+import gimp from "../../style/assets/img/logo/draws/gimp_logo.png"
+import blender from "../../style/assets/img/logo/draws/blender_logo.png"
+import krita from "../../style/assets/img/logo/draws/krita_logo.png"
+import palette from "../../style/assets/img/logo/draws/palette_logo.png"
+import photoshop from "../../style/assets/img/logo/draws/photoshop_logo.png"
+import painttoosai from "../../style/assets/img/logo/draws/paintTooSai_logo.png"
+
 import {ESkillsDeveloper, ESkillsImaginary} from "./Skills.types";
 
 const Skills = () => {
     const intl = useIntl();
 
-    const logoTechnosSkills = [react, javascript, typescript, graphql, apollo, html, css, mysql, github, gitlab, jest];
-    const logoDrawsSkills = [pen, figma];
+    const logoTechnosSkills = [html, css, react, javascript, typescript, graphql, apollo, mysql, github, gitlab, jest];
+    const logoDrawsSkills = [pen, palette, figma, gimp, krita, painttoosai, photoshop, blender];
 
     return (
         <SSkillsContainer>
@@ -35,27 +42,24 @@ const Skills = () => {
             <SSkillsWrapper>
                 <SSkillsTitle>{intl.formatMessage({id: 'skill_subtitle_developer'})}</SSkillsTitle>
                 <p>Mes principaux outils :</p>
-                <SSkillsList style={{marginBottom: "5rem"}}>
+                <SSkillsList>
                     {Object.entries(ESkillsDeveloper).map((entry) => (
                         <li>{intl.formatMessage({id: `skill_title_${entry[1]}_developer`})}</li>))}
                 </SSkillsList>
-                <SPortfolioHashLink smooth
-                                    to={`/portfolio#graphics`}>{intl.formatMessage({id: "portfolio_title"})}</SPortfolioHashLink>
             </SSkillsWrapper>
 
             <SSkillsWrapper>
                 <SSkillsTitle>{intl.formatMessage({id: 'skill_subtitle_imaginary'})}</SSkillsTitle>
                 <p>Mes principaux outils :</p>
-                <SSkillsList style={{marginBottom: "5rem"}}>
+                <SSkillsList>
                     {Object.entries(ESkillsImaginary).map((entry) => (
                         <li>{intl.formatMessage({id: `skill_title_${entry[1]}_imaginary`})}</li>))}
                 </SSkillsList>
-                <SPortfolioHashLink smooth
-                                    to={`/portfolio#graphics`}>{intl.formatMessage({id: "portfolio_title"})}</SPortfolioHashLink>
             </SSkillsWrapper>
             <SSkillsLogoWrapper>
-                <SSkillsLogoImg src={pen} alt="Logo pen"/>
-                <SSkillsLogoImg src={figma} alt="Logo figma"/>
+                {logoDrawsSkills.map((draw) =>
+                    <SSkillsLogoImg key={draw.id} src={draw} alt="Logo"/>
+                )}
             </SSkillsLogoWrapper>
         </SSkillsContainer>
     )

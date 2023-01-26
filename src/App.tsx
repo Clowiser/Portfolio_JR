@@ -14,7 +14,6 @@ export const languageContext = createContext({});
 
 const App = () => {
     const [initLocal, setInitLocal] = useState("fr-FR");
-
     const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>): void => {
         setInitLocal(event.target.value);
     };

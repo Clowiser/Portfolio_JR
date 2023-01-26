@@ -1,10 +1,10 @@
 import {
-    SCircleImg, SListUnique,
+    SCircleImg,
     SRealisationElementContainer,
     SRealisationContainer,
     SRealisationElementList,
     SRealisationTitle,
-    SRealisationElementWrapper, SCircleImgWrapper, SCircleText
+    SRealisationElementWrapper, SCircleImgWrapper,
 } from "./ThreeRealisations.styled";
 import {useIntl} from "react-intl";
 import React, {useEffect, useState} from "react";
@@ -12,6 +12,7 @@ import axios from "axios";
 import useModal from "../../utils/Hooks/useModal";
 import {SModal} from "../../utils/Modal/Modal.styled";
 import Modal from "../Modal/Modal";
+import {SMessagesContainer} from "../../../style/Style.styled";
 
 const ThreeRealisations = () => {
     const intl = useIntl();
@@ -35,10 +36,16 @@ const ThreeRealisations = () => {
     }, []);
 
     if (error) {
-        return <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
+        return (
+            <SMessagesContainer>
+                <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
+            </SMessagesContainer>)
     }
     if (loading) {
-        return <p>{intl.formatMessage({id: 'loading_api_loading'})}</p>
+        return (
+            <SMessagesContainer>
+                <p>{intl.formatMessage({id: 'loading_api_loading'})}</p>
+            </SMessagesContainer>)
     }
 
     return (

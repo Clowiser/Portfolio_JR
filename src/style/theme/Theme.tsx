@@ -6,6 +6,7 @@ const Theme = {
     redColor: '#FF0000',
     blueColor: '#00FFFF',
     fontFamily: 'ChunkFive',
+    border: '0.5rem',
 };
 
 export default Theme;
