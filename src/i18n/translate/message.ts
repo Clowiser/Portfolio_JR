@@ -7,7 +7,6 @@ export const message = {
     [locales.en]: {
         //General
         loading_api_error: "We are sorry, we can't load information for the moment, try again later!",
-        loading_api_loading: "Loading, please wait...",
         //Home
         home_title: "Home",
         home_header_title: "Junior Frontend Developer & Explorer of Imaginary",
@@ -70,7 +69,6 @@ export const message = {
     [locales.fr]: {
         //General
         loading_api_error: "Nous sommes désolés, nous ne pouvons pas charger les informations pour le moment, réessayez plus tard !",
-        loading_api_loading: "Chargement, veuillez patienter...",
         //Home
         home_title: "Accueil",
         home_header_title: "Développeuse Frontend Junior & Exploratrice de l'Imaginaire",

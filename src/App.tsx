@@ -1,14 +1,14 @@
 import React, {createContext, useState} from 'react';
 import './style/App.css';
 import {BrowserRouter} from "react-router-dom";
-import PortfolioApp from "./component/AppPortfolio/PortfolioApp";
+import PortfolioApp from "./Page/AppPortfolio/PortfolioApp";
 import message, {locales} from "./i18n/translate/message";
 import {IntlProvider} from "react-intl";
 import FontsStyle from "./fonts/FontsStyle";
 import {ThemeProvider} from "styled-components";
 import theme from "./style/theme/Theme";
-import ScrollButton from "./component/utils/Scroll/ScrollButton";
-import {Content} from "./component/utils/Scroll/ScrollButton.styled";
+import ScrollButton from "./Page/utils/Scroll/ScrollButton";
+import {Content} from "./Page/utils/Scroll/ScrollButton.styled";
 
 export const languageContext = createContext({});
 
