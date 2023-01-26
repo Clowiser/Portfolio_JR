@@ -3,8 +3,9 @@ import axios from "axios";
 import {useParams} from "react-router-dom";
 import {useIntl} from "react-intl";
 import PortfolioDetail from "../Detail/PortfolioDetail";
-import {SMessagesContainer} from "../../../style/Style.styled";
+import {SErrorMessage, SMessagesContainer} from "../../../style/Style.styled";
 import Loader from "../../../Component/Loader/Loader";
+import Error from "../../../Component/Error/Error";
 
 const PortfolioWWDetailData = () => {
     const intl = useIntl();
@@ -31,7 +32,11 @@ const PortfolioWWDetailData = () => {
 
 
     if (error) {
-        return <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
+        return (
+            <SMessagesContainer>
+                <SErrorMessage>{intl.formatMessage({id: 'loading_api_error'})}</SErrorMessage>
+                <Error/>
+            </SMessagesContainer>)
     }
     if (loading) {
         return (

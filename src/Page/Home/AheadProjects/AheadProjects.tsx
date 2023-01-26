@@ -12,8 +12,9 @@ import axios from "axios";
 import useModal from "../../utils/Hooks/useModal";
 import {SModal} from "../../utils/Modal/Modal.styled";
 import Modal from "../Modal/Modal";
-import {SMessagesContainer} from "../../../style/Style.styled";
+import {SErrorMessage, SMessagesContainer} from "../../../style/Style.styled";
 import Loader from "../../../Component/Loader/Loader";
+import Error from "../../../Component/Error/Error";
 
 const AheadProjects = () => {
     const intl = useIntl();
@@ -39,7 +40,8 @@ const AheadProjects = () => {
     if (error) {
         return (
             <SMessagesContainer>
-                <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
+                <SErrorMessage>{intl.formatMessage({id: 'loading_api_error'})}</SErrorMessage>
+                <Error/>
             </SMessagesContainer>)
     }
     if (loading) {

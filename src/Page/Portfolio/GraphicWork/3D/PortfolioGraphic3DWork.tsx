@@ -8,8 +8,9 @@ import {
     SPortfolioDetailsLink,
     SPortfolioWrapper
 } from "../../PortfolioIndex.styled";
-import {SMessagesContainer} from "../../../../style/Style.styled";
+import {SErrorMessage, SMessagesContainer} from "../../../../style/Style.styled";
 import Loader from "../../../../Component/Loader/Loader";
+import Error from "../../../../Component/Error/Error";
 
 const PortfolioGraphic3DWork = () => {
     const intl = useIntl();
@@ -31,7 +32,11 @@ const PortfolioGraphic3DWork = () => {
     }, []);
 
     if (error) {
-        return <p>{intl.formatMessage({id: 'loading_api_error'})}</p>
+        return (
+            <SMessagesContainer>
+                <SErrorMessage>{intl.formatMessage({id: 'loading_api_error'})}</SErrorMessage>
+                <Error/>
+            </SMessagesContainer>)
     }
     if (loading) {
         return (
